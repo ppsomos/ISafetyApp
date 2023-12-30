@@ -1,0 +1,313 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI Text_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: dd7d28031bc502847a4ee6199675860c, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 481342349312
+    m_Localized: Start Now
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1869212377088
+    m_Localized: Home
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1867203305472
+    m_Localized: Time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1693374570496
+    m_Localized: Wrong Answer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1692573458432
+    m_Localized: Correct Answer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1691667488768
+    m_Localized: Match Complete
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1434565042176
+    m_Localized: Congratulation You have unlocked next Room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1433759735808
+    m_Localized: Level Fail
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1433105424384
+    m_Localized: Next
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1432325283840
+    m_Localized: Score
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1431670972416
+    m_Localized: 'Level Complete '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1430924386304
+    m_Localized: Resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1429435408384
+    m_Localized: Game Paused
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1427564748800
+    m_Localized: 'Enter Name '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1426251931648
+    m_Localized: 'Enter Your Name '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1423978618880
+    m_Localized: Player 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1235033612288
+    m_Localized: Player 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1234232500224
+    m_Localized: Phishing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1233288781824
+    m_Localized: Cyber Bullying
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1232118571008
+    m_Localized: Math
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1230285660160
+    m_Localized: Grooming
+    m_Metadata:
+      m_Items: []
+  - m_Id: 888084979712
+    m_Localized: Addiction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 887011237888
+    m_Localized: Fake News
+    m_Metadata:
+      m_Items: []
+  - m_Id: 886147211264
+    m_Localized: Loading
+    m_Metadata:
+      m_Items: []
+  - m_Id: 885270601728
+    m_Localized: Are You sure you want exit?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 884507238400
+    m_Localized: OK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 880157745152
+    m_Localized: Choose Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 874562543616
+    m_Localized: Difficulty level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 865418960896
+    m_Localized: Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 853951733760
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 501743443968
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 498052456448
+    m_Localized: Play With Friends
+    m_Metadata:
+      m_Items: []
+  - m_Id: 494692818944
+    m_Localized: Rate Us
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2531715276800
+    m_Localized: Music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 119579925635072
+    m_Localized: Read question
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278588292251648
+    m_Localized: To access the game settings, press the "Settings" button.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280656369336320
+    m_Localized: Please press the button to choose the language for the game.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280658516819968
+    m_Localized: To adjust the game's difficulty level, press the designated button.
+      Keep in mind that the difficulty setting will impact the amount of time you
+      get to complete tasks in each room.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280660328759296
+    m_Localized: To toggle game effects and button sound, press the sound button.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280661066956800
+    m_Localized: To turn the game's background music on or off, press the music button.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280661670936576
+    m_Localized: To return to the main menu, please press the Back button.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280662409134080
+    m_Localized: To begin the game, press the start button.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280663247994880
+    m_Localized: To choose a room, click on the corresponding room button.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280663919083520
+    m_Localized: To rotate the player, swipe on the screen left or right.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280664661475328
+    m_Localized: To move the player, drag the joystick.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280665395478528
+    m_Localized: To start the quiz, please click the "Read Question" button.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280666100121600
+    m_Localized: To play multiplayer, select the "Play with Friends" option.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280666804764672
+    m_Localized: You can choose your avatar by clicking here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280667408744448
+    m_Localized: You can enter your name here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280668075638784
+    m_Localized: To start the level, simply select a room by pressing its corresponding
+      button.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 281245111205888
+    m_Localized: You need a minimum 50% score to complete the level.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 281238903635968
+    m_Localized: To change your language, click on the language dropdown. If you
+      want to adjust the game's difficulty, click on the difficulty dropdown. You
+      can also toggle the game's background sound, button sound and effect sound
+      by clicking on music and sound buttons respectively.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 281243165048832
+    m_Localized: Read more
+    m_Metadata:
+      m_Items: []
+  - m_Id: 281243819360256
+    m_Localized: Each room contains multiple objects. When you go near these objects,
+      you can find hidden quizes. Find these objects, complete the quizes to get
+      score points. Once you complete all quizes, you can escape this room and unlock
+      next one!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 281244440117248
+    m_Localized: You will get scored for each correct question.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 281245782294528
+    m_Localized: Your score will be deciding factor in multiplayer mode.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 281246419828736
+    m_Localized: ISafetyApp have an intelligent AI feature which will help you decide
+      a difficulty level for the game.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 281247694897152
+    m_Localized: These questions are part of initial assessment which will guide
+      you a difficulty level best suited to your style.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 281249003520000
+    m_Localized: Remember,higher difficulty level reduces time to solve each tasks
+      in a room, making game challenging to progress.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 281250983231488
+    m_Localized: This is your recommended difficulty level. You can always change
+      it from the settings menu.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 281251687874560
+    m_Localized: Press this button to Reset your progress. Remember this will erase
+      all game data.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 466559259820032
+    m_Localized: Question Complete!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 468480792117248
+    m_Localized: AI Assessment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 500172727345152
+    m_Localized: Press ok Button to Enter Second Player Data
+    m_Metadata:
+      m_Items: []
+  - m_Id: 509968822132736
+    m_Localized: To pause the game, press the pause button.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 510140671156224
+    m_Localized: To resume the game, simply press the "Resume" button.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 520917956255744
+    m_Localized: Rematch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1453763801038848
+    m_Localized: Player 1 Term Complete
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1460327605780480
+    m_Localized: Skip
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

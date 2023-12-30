@@ -1,0 +1,118 @@
+Converting script [1 / 14]	[\Standard Assets\Utility\DragRigidbody.cs]
+	Fragments : 5
+		[ 0] : Line:   22	InputMethod   GetMouseButtonDown  	(0)
+		[ 1] : Line:   32	InputProperty mousePosition       
+		[ 2] : Line:   33	InputProperty mousePosition       
+		[ 3] : Line:   71	InputMethod   GetMouseButton      	(0)
+		[ 4] : Line:   73	InputProperty mousePosition       
+
+Converting script [2 / 14]	[\Standard Assets\Utility\ForcedReset.cs]
+	Fragments : 1
+		[ 0] : Line:   14	InputMethod   GetButtonDown       	("ResetObject")
+
+Converting script [3 / 14]	[\Standard Assets\Utility\SimpleMouseRotator.cs]
+	Fragments : 4
+		[ 0] : Line:   48	InputMethod   GetAxis             	("Mouse X")
+		[ 1] : Line:   49	InputMethod   GetAxis             	("Mouse Y")
+		[ 2] : Line:   98	InputProperty mousePosition       
+		[ 3] : Line:   99	InputProperty mousePosition       
+
+Converting script [4 / 14]	[\Standard Assets\2D\Scripts\Platformer2DUserControl.cs]
+	Fragments : 3
+		[ 0] : Line:   25	InputMethod   GetButtonDown       	("Jump")
+		[ 1] : Line:   33	InputMethod   GetKey              	(KeyCode.LeftControl)
+		[ 2] : Line:   34	InputMethod   GetAxis             	("Horizontal")
+
+Converting script [5 / 14]	[\Standard Assets\Cameras\Scripts\FreeLookCam.cs]
+	Fragments : 9
+		[ 0] : Line:   35	Other mod.	[Cursor.lockState]
+		[ 1] : Line:   36	Other mod.	[Cursor.visible]
+		[ 2] : Line:   47	InputMethod   GetMouseButtonUp    	(0)
+		[ 3] : Line:   49	Other mod.	[Cursor.lockState]
+		[ 4] : Line:   50	Other mod.	[Cursor.visible]
+		[ 5] : Line:   57	Other mod.	[Cursor.lockState]
+		[ 6] : Line:   58	Other mod.	[Cursor.visible]
+		[ 7] : Line:   76	InputMethod   GetAxis             	("Mouse X")
+		[ 8] : Line:   77	InputMethod   GetAxis             	("Mouse Y")
+
+Converting script [6 / 14]	[\Standard Assets\ParticleSystems\Scripts\Hose.cs]
+	Fragments : 2
+		[ 0] : Line:   21	InputMethod   GetMouseButton      	(0)
+		[ 1] : Line:   23	InputMethod   GetKeyDown          	(KeyCode.Alpha1)
+
+Converting script [7 / 14]	[\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs]
+	Fragments : 2
+		[ 0] : Line:   69	InputMethod   GetButtonDown       	("Jump")
+		[ 1] : Line:  216	InputMethod   GetKey              	(KeyCode.LeftShift)
+
+Converting script [8 / 14]	[\Standard Assets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs]
+	Fragments : 8
+		[ 0] : Line:   63	Other mod.	[Cursor.lockState]
+		[ 1] : Line:   64	Other mod.	[Cursor.visible]
+		[ 2] : Line:   77	InputMethod   GetKeyUp            	(KeyCode.Escape)
+		[ 3] : Line:   81	InputMethod   GetMouseButtonUp    	(0)
+		[ 4] : Line:   88	Other mod.	[Cursor.lockState]
+		[ 5] : Line:   89	Other mod.	[Cursor.visible]
+		[ 6] : Line:   93	Other mod.	[Cursor.lockState]
+		[ 7] : Line:   94	Other mod.	[Cursor.visible]
+
+Converting script [9 / 14]	[\Standard Assets\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs]
+	Fragments : 4
+		[ 0] : Line:   47	InputMethod   GetKey              	(RunKey)
+		[ 1] : Line:  133	InputMethod   GetButtonDown       	("Jump")
+		[ 2] : Line:  217	InputMethod   GetAxis             	("Horizontal")
+		[ 3] : Line:  218	InputMethod   GetAxis             	("Vertical")
+
+Converting script [10 / 14]	[\Standard Assets\Characters\RollerBall\Scripts\BallUserControl.cs]
+	Fragments : 3
+		[ 0] : Line:   43	InputMethod   GetAxis             	("Horizontal")
+		[ 1] : Line:   44	InputMethod   GetAxis             	("Vertical")
+		[ 2] : Line:   45	InputMethod   GetButton           	("Jump")
+
+Converting script [11 / 14]	[\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs]
+	Fragments : 5
+		[ 0] : Line:   40	InputMethod   GetButtonDown       	("Jump")
+		[ 1] : Line:   49	InputMethod   GetAxis             	("Horizontal")
+		[ 2] : Line:   50	InputMethod   GetAxis             	("Vertical")
+		[ 3] : Line:   51	InputMethod   GetKey              	(KeyCode.C)
+		[ 4] : Line:   67	InputMethod   GetKey              	(KeyCode.LeftShift)
+
+Converting script [12 / 14]	[\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneUserControl2Axis.cs]
+	Fragments : 3
+		[ 0] : Line:   28	InputMethod   GetAxis             	("Horizontal")
+		[ 1] : Line:   29	InputMethod   GetAxis             	("Vertical")
+		[ 2] : Line:   30	InputMethod   GetButton           	("Fire1")
+
+Converting script [13 / 14]	[\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneUserControl4Axis.cs]
+	Fragments : 5
+		[ 0] : Line:   31	InputMethod   GetAxis             	("Mouse X")
+		[ 1] : Line:   32	InputMethod   GetAxis             	("Mouse Y")
+		[ 2] : Line:   33	InputMethod   GetButton           	("Fire1")
+		[ 3] : Line:   34	InputMethod   GetAxis             	("Horizontal")
+		[ 4] : Line:   35	InputMethod   GetAxis             	("Vertical")
+
+Converting script [14 / 14]	[\Standard Assets\Vehicles\Car\Scripts\CarUserControl.cs]
+	Fragments : 3
+		[ 0] : Line:   23	InputMethod   GetAxis             	("Horizontal")
+		[ 1] : Line:   24	InputMethod   GetAxis             	("Vertical")
+		[ 2] : Line:   26	InputMethod   GetAxis             	("Jump")
+
+
+14 scripts modified!
+Overwriting actual scripts...
+	[0 / 14] from  [C:/Users/asimj/Desktop/BrainGamesProjects/safety-escape-game-cp/CF2-Data/Script-Backups/2023-08-22-15-22\Assets-After/\Standard Assets\Utility\DragRigidbody.cs] to [C:/Users/asimj/Desktop/BrainGamesProjects/safety-escape-game-cp/Assets/\Standard Assets\Utility\DragRigidbody.cs]
+	[1 / 14] from  [C:/Users/asimj/Desktop/BrainGamesProjects/safety-escape-game-cp/CF2-Data/Script-Backups/2023-08-22-15-22\Assets-After/\Standard Assets\Utility\ForcedReset.cs] to [C:/Users/asimj/Desktop/BrainGamesProjects/safety-escape-game-cp/Assets/\Standard Assets\Utility\ForcedReset.cs]
+	[2 / 14] from  [C:/Users/asimj/Desktop/BrainGamesProjects/safety-escape-game-cp/CF2-Data/Script-Backups/2023-08-22-15-22\Assets-After/\Standard Assets\Utility\SimpleMouseRotator.cs] to [C:/Users/asimj/Desktop/BrainGamesProjects/safety-escape-game-cp/Assets/\Standard Assets\Utility\SimpleMouseRotator.cs]
+	[3 / 14] from  [C:/Users/asimj/Desktop/BrainGamesProjects/safety-escape-game-cp/CF2-Data/Script-Backups/2023-08-22-15-22\Assets-After/\Standard Assets\2D\Scripts\Platformer2DUserControl.cs] to [C:/Users/asimj/Desktop/BrainGamesProjects/safety-escape-game-cp/Assets/\Standard Assets\2D\Scripts\Platformer2DUserControl.cs]
+	[4 / 14] from  [C:/Users/asimj/Desktop/BrainGamesProjects/safety-escape-game-cp/CF2-Data/Script-Backups/2023-08-22-15-22\Assets-After/\Standard Assets\Cameras\Scripts\FreeLookCam.cs] to [C:/Users/asimj/Desktop/BrainGamesProjects/safety-escape-game-cp/Assets/\Standard Assets\Cameras\Scripts\FreeLookCam.cs]
+	[5 / 14] from  [C:/Users/asimj/Desktop/BrainGamesProjects/safety-escape-game-cp/CF2-Data/Script-Backups/2023-08-22-15-22\Assets-After/\Standard Assets\ParticleSystems\Scripts\Hose.cs] to [C:/Users/asimj/Desktop/BrainGamesProjects/safety-escape-game-cp/Assets/\Standard Assets\ParticleSystems\Scripts\Hose.cs]
+	[6 / 14] from  [C:/Users/asimj/Desktop/BrainGamesProjects/safety-escape-game-cp/CF2-Data/Script-Backups/2023-08-22-15-22\Assets-After/\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs] to [C:/Users/asimj/Desktop/BrainGamesProjects/safety-escape-game-cp/Assets/\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs]
+	[7 / 14] from  [C:/Users/asimj/Desktop/BrainGamesProjects/safety-escape-game-cp/CF2-Data/Script-Backups/2023-08-22-15-22\Assets-After/\Standard Assets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs] to [C:/Users/asimj/Desktop/BrainGamesProjects/safety-escape-game-cp/Assets/\Standard Assets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs]
+	[8 / 14] from  [C:/Users/asimj/Desktop/BrainGamesProjects/safety-escape-game-cp/CF2-Data/Script-Backups/2023-08-22-15-22\Assets-After/\Standard Assets\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs] to [C:/Users/asimj/Desktop/BrainGamesProjects/safety-escape-game-cp/Assets/\Standard Assets\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs]
+	[9 / 14] from  [C:/Users/asimj/Desktop/BrainGamesProjects/safety-escape-game-cp/CF2-Data/Script-Backups/2023-08-22-15-22\Assets-After/\Standard Assets\Characters\RollerBall\Scripts\BallUserControl.cs] to [C:/Users/asimj/Desktop/BrainGamesProjects/safety-escape-game-cp/Assets/\Standard Assets\Characters\RollerBall\Scripts\BallUserControl.cs]
+	[10 / 14] from  [C:/Users/asimj/Desktop/BrainGamesProjects/safety-escape-game-cp/CF2-Data/Script-Backups/2023-08-22-15-22\Assets-After/\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs] to [C:/Users/asimj/Desktop/BrainGamesProjects/safety-escape-game-cp/Assets/\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs]
+	[11 / 14] from  [C:/Users/asimj/Desktop/BrainGamesProjects/safety-escape-game-cp/CF2-Data/Script-Backups/2023-08-22-15-22\Assets-After/\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneUserControl2Axis.cs] to [C:/Users/asimj/Desktop/BrainGamesProjects/safety-escape-game-cp/Assets/\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneUserControl2Axis.cs]
+	[12 / 14] from  [C:/Users/asimj/Desktop/BrainGamesProjects/safety-escape-game-cp/CF2-Data/Script-Backups/2023-08-22-15-22\Assets-After/\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneUserControl4Axis.cs] to [C:/Users/asimj/Desktop/BrainGamesProjects/safety-escape-game-cp/Assets/\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneUserControl4Axis.cs]
+	[13 / 14] from  [C:/Users/asimj/Desktop/BrainGamesProjects/safety-escape-game-cp/CF2-Data/Script-Backups/2023-08-22-15-22\Assets-After/\Standard Assets\Vehicles\Car\Scripts\CarUserControl.cs] to [C:/Users/asimj/Desktop/BrainGamesProjects/safety-escape-game-cp/Assets/\Standard Assets\Vehicles\Car\Scripts\CarUserControl.cs]
+
+Overwriting COMPLETED!

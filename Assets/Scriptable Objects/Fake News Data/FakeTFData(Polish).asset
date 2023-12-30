@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38fa2ca5f64c5154f959abf368727ae3, type: 3}
+  m_Name: FakeTFData(Polish)
+  m_EditorClassIdentifier: 
+  quizType: 1
+  roomIndex: 1
+  questions:
+  - "Dezinformacja to nieprawdziwa lub niedok\u0142adna informacja, kt\xF3ra zosta\u0142a
+    omy\u0142kowo lub nieumy\u015Blnie stworzona lub rozpowszechniona"
+  - "Celem dezinformacji jest wprowadzenie w b\u0142\u0105d"
+  - " Dezinformacja to fa\u0142szywe informacje, kt\xF3re nie s\u0105 celowo tworzone
+    i rozpowszechniane"
+  - "Celem dezinformacji jest wywarcie wp\u0142ywu na opini\u0119 publiczn\u0105
+    lub zaciemnienie prawdy"
+  - "\u201EFa\u0142szywe wiadomo\u015Bci\u201D s\u0105 \u015Bci\u015Ble zwi\u0105zane
+    z polityk\u0105 i s\u0105 rozumiane w w\u0119\u017Cszym znaczeniu jako wiadomo\u015Bci
+    polityczne"
+  - "Fa\u0142szywe informacje odnosz\u0105 si\u0119 do szeregu informacji dotycz\u0105cych
+    wy\u0142\u0105cznie polityki"
+  - "a\u0142szywe informacje to wiadomo\u015Bci, historie lub mistyfikacje stworzone
+    w celu celowego wprowadzenia w b\u0142\u0105d lub oszukania czytelnik\xF3w."
+  - "Clickbait to prawdziwe historie, aby poinformowa\u0107 jak najwi\u0119cej os\xF3b"
+  - "Propaganda to przekazywanie historii w celu informowania odbiorc\xF3w o uczciwych,
+    opartych na wsp\xF3\u0142pracy i rozwi\u0105zywaniu problem\xF3w politycznych
+    sprawach i programach"
+  - "Wiele stron internetowych i kont w mediach spo\u0142eczno\u015Bciowych publikuje
+    fa\u0142szywe wiadomo\u015Bci dla rozrywki i parodii"
+  - "Media spo\u0142eczno\u015Bciowe s\u0105 wiarygodnym \u017Ar\xF3d\u0142em informacji
+    o problemach medycznych "
+  - " Czasami nasze w\u0142asne pogl\u0105dy lub przekonania wp\u0142ywaj\u0105 na
+    nasz\u0105 ocen\u0119 wiadomo\u015Bci lub reporta\u017Cu"
+  - "Cz\u0119sto nag\u0142\xF3wki fa\u0142szywych wiadomo\u015Bci s\u0105 pisane
+    ma\u0142ymi literami."
+  - " Kana\u0142y informacyjne w mediach spo\u0142eczno\u015Bciowych maj\u0105 tendencj\u0119
+    do wy\u015Bwietlania wiadomo\u015Bci i artyku\u0142\xF3w, kt\xF3re wed\u0142ug
+    nich mog\u0105 nam si\u0119 spodoba\u0107 na podstawie naszych spersonalizowanych
+    wyszukiwa\u0144."
+  - "Zmanipulowana tre\u015B\u0107 ma miejsce, gdy prawdziwe informacje lub zdj\u0119cia
+    s\u0105 udost\u0119pniane publicznie bez sprawdzania krzy\u017Cowego. "
+  - "Wprowadzaj\u0105ce w b\u0142\u0105d nag\u0142\xF3wki to fa\u0142szywe historie,
+    kt\xF3rych nag\u0142\xF3wki s\u0105 pisane wielkimi literami"
+  - "Mo\u017Cesz pom\xF3c powstrzyma\u0107 rozprzestrzenianie si\u0119 fa\u0142szywych
+    wiadomo\u015Bci w mediach spo\u0142eczno\u015Bciowych, my\u015Bl\u0105c krytycznie."
+  - "Wiek nie ma wp\u0142ywu na to, kto jest bardziej sk\u0142onny do rozpowszechniania
+    fa\u0142szywych wiadomo\u015Bci "
+  - "Tw\xF3rcy dezinformacji s\u0105 celem okre\u015Blonych grup demograficznych"
+  - " Dezinformacja kwitnie w obszarach, w kt\xF3rych ludzie maj\u0105 niewielk\u0105
+    kontrol\u0119 nad zagro\u017Ceniami, takimi jak katastrofy ekologiczne lub choroby "
+  Op1:
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  Op2:
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  answersIndex: 0000000001000000010000000000000000000000010000000000000001000000010000000000000001000000000000000100000000000000010000000100000000000000010000000000000000000000

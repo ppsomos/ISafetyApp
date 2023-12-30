@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38fa2ca5f64c5154f959abf368727ae3, type: 3}
+  m_Name: AddictionTFData
+  m_EditorClassIdentifier: 
+  quizType: 1
+  roomIndex: 2
+  questions:
+  - 'Using technology releases more dopamine than eating your favourite food. '
+  - 'Problems with Internet addiction is more probable among teenagers than adults. '
+  - 'An addicted person can immediately stop being addicted if he or she wants to. '
+  - Internet addiction causes changes only in your mental health.
+  - 'Excessive Internet use is a disorder. '
+  - 'Internet addiction is connected only with using too much Internet. '
+  - Is internet addiction listed in the latest edition of the Diagnostic and Statistical
+    Manual of Mental Disorders (commonly referred to as the DSM-5)?
+  - 'Could Internet addiction be related to instant gratification? '
+  - Could Internet addiction be related to mental illness?
+  - Are medications sometimes used to treat Internet addiction?
+  - 'The factors associated with Internet addiction include: depression, anxiety,
+    iiiiiaggression, impulsivity, and low self-esteem.'
+  - Do video games affect the brain in the same way as addictive drugs? Choose the
+    correct answer.
+  Op1:
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  Op2:
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  answersIndex: 000000000000000001000000010000000100000001000000010000000000000000000000000000000000000000000000

@@ -1,0 +1,1420 @@
+﻿using System.Collections;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class UKManager : MonoBehaviour
+{
+    [Header("******************* Question Data *******************")]
+    public TrueFalseData TFData;
+    public TrueFalseData TFData_Greek;
+    public TrueFalseData TFData_Polish;
+
+    [Header("******************* Game Data *******************")]
+    public GameData GData;
+
+    [Header("******************* Level Complete Text *******************")]
+    public Text LevelCompleteText;
+
+    [Header("******************* Room Poster *******************")]
+    public PosterData Poster;
+    public GameObject[] Room_Poster;
+    public Image[] Canves_Room_Poster;
+
+    [Header("******************* Question Tick Button *******************")]
+    public Button TickButton1;
+    public Button TickButton2;
+    public Button TickButton3;
+
+    [Header("******************* Question Reset Button *******************")]
+    public Button ResetButton;
+
+    [Header("******************* Answer Decision Text *******************")]
+    public Text CorrectAnswerText;
+    public Text WrongAnswerText;
+
+    [Header("******************* Historey Question Data *******************")]
+    public Text historyQuestonText;
+    public static string historyFinalAnswer;
+    //public static int historyQuizIndex;
+    public TextMeshProUGUI historyScoreText;
+    public GameObject historyCompleteImage;
+    public string[] historyQues;
+    public int[] historyAns;
+    public Text[] historyOptionTexts;
+    private Option[] histOp1 = new Option[5];
+    private Option[] histOp2 = new Option[5];
+
+
+    [Header("******************* Geographic Question Data *******************")]
+    public Text geographyQuestonText;
+    public static string geographyFinalAnswer;
+    //public static int geographyQuizIndex;
+    public TextMeshProUGUI geographyScoreText;
+    public GameObject geographyCompleteImage;
+    public string[] geographyQues;
+    public int[] geographyAns;
+    public Text[] geographyOptionTexts;
+    private Option[] geogOp1 = new Option[5];
+    private Option[] geogOp2 = new Option[5];
+
+
+    [Header("******************* Food Question Data *******************")]
+    public Text foodQuestonText;
+    public static string foodFinalAnswer;
+    //public static int foodQuizIndex;
+    public TextMeshProUGUI foodScoreText;
+    public GameObject foodCompleteImage;
+    public string[] foodQues;
+    public int[] foodAns;
+    public Text[] foodOptionTexts;
+    private Option[] foodOp1 = new Option[5];
+    private Option[] foodOp2 = new Option[5];
+
+
+    [Header("******************* Culture Question Data *******************")]
+    public Text cultureQuestonText;
+    public static string cultureFinalAnswer;
+    //public static int cultureQuizIndex;
+    public TextMeshProUGUI cultureScoreText;
+    public GameObject cultureCompleteImage;
+    public string[] cultureQues;
+    public int[] cultureAns;
+    public Text[] cultureOptionTexts;
+    private Option[] culOp1 = new Option[5];
+    private Option[] culOp2 = new Option[5];
+
+
+    enum answer { wrong, correct };
+    [Header("******************* Game UI *******************")]
+    public GameObject quizPanel;
+    public static int selectedCategory = 0;
+    public GameObject levelCompletePanel;
+    [SerializeField] GameObject Background;
+    public GameObject levelFailPanel;
+    public GameObject cameraobj;
+    public GameObject congratsPanel;
+    public GameObject playerController;
+    public GameObject playerControllerCanvas;
+    public GameObject MainCanvas;
+    private bool Ischaracter;
+    public GameObject controller;
+    public LoadManager loadingManager;
+    public Button RemoveTextStyle;
+    public CountDown countDown;
+    public static int selectedObj;
+    public Button quizHist;
+    public Button quizGeo;
+    public Button quizFood;
+    public Button quizCult;
+    public Button ReadQuestion;
+    public GameObject RoomCompleteParticleEffect;
+    public TMP_Text ShowScore;
+    public ParticleSystem Confetti1;
+    public ParticleSystem Confetti2;
+    void Start()
+    {
+        Ischaracter = false;
+        selectedCategory = 0;
+        UpdateGameProgress();
+        //RemoveTextStyle.onClick.RemoveAllListeners();
+        //RemoveTextStyle.onClick.AddListener(RemoveTextStyleFunc);
+       // SetPoster();
+    }
+    private void Update()
+    {
+        if (!Ischaracter)
+        {
+            if (FindObjectOfType<CharacterController>())
+            {
+                Ischaracter = true;
+                playerController = FindObjectOfType<CharacterController>().gameObject;
+            }
+        }
+
+    }
+    //public void SetPoster()
+    //{
+    //    int Sel = PlayerPrefs.GetInt("levelcurrent") - 1;
+    //    for (int i = 0; i < Room_Poster.Length; i++)
+    //    {
+    //        Room_Poster[i].GetComponent<SpriteRenderer>().sprite = Poster.Room[Sel].PosterLanguage[GData.SelectedLanguage].Poster[i].Poster_Sprite;
+    //        Canves_Room_Poster[i].GetComponent<Image>().sprite = Poster.Room[Sel].PosterLanguage[GData.SelectedLanguage].Poster[i].Poster_Sprite;
+    //    }
+    //}
+    public void UpdateGameProgress()
+    {
+        OptionButtonHandle(true);
+        if (!GameManager.Instance.IsMulti)
+        {
+            historyScoreText.text = PlayerPrefs.GetInt("UKHist") + "/3";
+            geographyScoreText.text = PlayerPrefs.GetInt("UKGeo") + "/3";
+            foodScoreText.text = PlayerPrefs.GetInt("UKFood") + "/3";
+            cultureScoreText.text = PlayerPrefs.GetInt("UKCult") + "/3";
+            //languageScoreText.text = PlayerPrefs.GetInt("UKLang") + "/3";
+            if (PlayerPrefs.GetInt("UKHist") >= 3)
+            {
+                quizHist.interactable = false;
+                historyCompleteImage.SetActive(true);
+            }
+            if (PlayerPrefs.GetInt("UKGeo") >= 3)
+            {
+                quizGeo.interactable = false;
+                geographyCompleteImage.SetActive(true);
+            }
+            if (PlayerPrefs.GetInt("UKFood") >= 3)
+            {
+                quizFood.interactable = false;
+                foodCompleteImage.SetActive(true);
+            }
+            if (PlayerPrefs.GetInt("UKCult") >= 3)
+            {
+                quizCult.interactable = false;
+                cultureCompleteImage.SetActive(true);
+            }
+            if (PlayerPrefs.GetInt("Level1") >= 4)
+            {
+                LevelFail();
+            }
+        }
+        else
+        {
+            historyScoreText.text = GData.Room[0].HisQ[0].AnswerGiven + "/" + GData.Room[0].HisQ[0].TotalQuestion;
+            geographyScoreText.text = GData.Room[0].GeoQ[0].AnswerGiven + "/" + GData.Room[0].GeoQ[0].TotalQuestion;
+            foodScoreText.text = GData.Room[0].FoodQ[0].AnswerGiven + "/" + GData.Room[0].FoodQ[0].TotalQuestion;
+            cultureScoreText.text = GData.Room[0].CulQ[0].AnswerGiven + "/" + GData.Room[0].CulQ[0].TotalQuestion;
+            if (GData.Room[0].No_Of_Obj_Complete < 4)
+            {
+                if (GData.Room[0].HisQ[0].AnswerGiven >= GData.Room[0].HisQ[0].TotalQuestion)
+                {
+                    if (!GData.Room[0].HisQ[0].IsComplte)
+                    {
+                        GData.Room[0].HisQ[0].IsComplte = true;
+                        GData.Room[0].No_Of_Obj_Complete++;
+                        PersistentDataManager.instance.SaveData();
+                        historyCompleteImage.SetActive(true);
+                    }
+                    else
+                    {
+                        ReadQuestion.interactable = false;
+                    }
+                }
+                if (GData.Room[0].GeoQ[0].AnswerGiven >= GData.Room[0].GeoQ[0].TotalQuestion)
+                {
+                    if (!GData.Room[0].GeoQ[0].IsComplte)
+                    {
+                        GData.Room[0].GeoQ[0].IsComplte = true;
+                        GData.Room[0].No_Of_Obj_Complete++;
+                        PersistentDataManager.instance.SaveData();
+                        geographyCompleteImage.SetActive(true);
+                    }
+                    else
+                    {
+                        ReadQuestion.interactable = false;
+                    }
+                }
+                if (GData.Room[0].FoodQ[0].AnswerGiven >= GData.Room[0].FoodQ[0].TotalQuestion)
+                {
+                    if (!GData.Room[0].FoodQ[0].IsComplte)
+                    {
+                        GData.Room[0].FoodQ[0].IsComplte = true;
+                        GData.Room[0].No_Of_Obj_Complete++;
+                        PersistentDataManager.instance.SaveData();
+                        foodCompleteImage.SetActive(true);
+                    }
+                    else
+                    {
+                        ReadQuestion.interactable = false;
+                    }
+                }
+                if (GData.Room[0].CulQ[0].AnswerGiven >= GData.Room[0].CulQ[0].TotalQuestion)
+                {
+                    if (!GData.Room[0].CulQ[0].IsComplte)
+                    {
+                        GData.Room[0].CulQ[0].IsComplte = true;
+                        GData.Room[0].No_Of_Obj_Complete++;
+                        PersistentDataManager.instance.SaveData();
+                        cultureCompleteImage.SetActive(true);
+                    }
+                    else
+                    {
+                        ReadQuestion.interactable = false;
+                    }
+                }
+
+                if (GData.Room[0].No_Of_Obj_Complete == 4)
+                {
+                    GData.Player[GameManager.Instance.SelectedPlayer].IsComplete = true;
+                    GData.Player[GameManager.Instance.SelectedPlayer].TimeTaken = GData.GameTime - PlayerPrefs.GetFloat("TimeRemaining");
+                    PersistentDataManager.instance.SaveData();
+                    //Debug.Log("111===" + GameManager.Instance.SelectedPlayer);
+                    //if (GameManager.Instance.SelectedPlayer < 1)
+                    //{
+                    //Debug.Log("22222");
+                    CountDown.timerIsRunning = true;
+                    RoomCompleteParticleEffect.SetActive(true);
+                    //congratsPanel.SetActive(true);
+                     //playerController.SetActive(false);
+                    //}
+                    //else
+                    //{
+                    //    //Debug.Log("3333");
+                    //    GameUIManager.Instance.OnCompetitionComplete();
+                    //}
+
+                }
+            }
+        }
+    }
+    public void LevelFail()
+    {
+        if (PlayerPrefs.GetInt("UKscore") >= 30)
+        {
+            RoomCompleteParticleEffect.SetActive(true);
+        }
+        else
+        {
+            levelFailPanel.SetActive(true);
+            levelFailPanel.transform.GetChild(0).GetChild(2).gameObject.SetActive(true);
+            switch(GData.SelectedLanguage)
+            {
+                case 0:
+                    ShowScore.text = $"Your Score is {PlayerPrefs.GetInt("UKscore")}" + " / 60";
+                    break;
+                case 1:
+                    ShowScore.text = $"Το σκορ σου είναι {PlayerPrefs.GetInt("UKscore")}" + " / 60";
+                    break;
+                 case 2:
+                    ShowScore.text = $"Twój wynik to {PlayerPrefs.GetInt("UKscore")}" + " / 60";
+                    break;
+            }         
+        }
+    }
+    public void CompleteRoom()
+    {
+        if (!GameManager.Instance.IsMulti)
+        {
+            cultureCompleteImage.SetActive(false);
+            //door1Col.isTrigger = true;
+            congratsPanel.SetActive(true);
+            playerController.SetActive(false);
+            playerControllerCanvas.SetActive(false);
+            MainCanvas.SetActive(false);
+            PlayerPrefs.SetInt("levelunlocked", 0);
+            PlayerPrefs.SetInt("LevelUnlock", 1);
+            if (GData.UnlockedLevel < 6)
+            {
+                GData.UnlockedLevel = 1;
+            }
+            PersistentDataManager.instance.SaveData();
+            GameManagers.score = PlayerPrefs.GetInt("Score") + 12;
+            PlayerPrefs.SetInt("Score", GameManagers.score);
+            PlayerPrefs.Save();
+            countDown.timeRemaining = GData.GameTime;
+            CountDown.timerIsRunning = true;
+            PlayerPrefs.SetFloat("TimeRemaining", countDown.timeRemaining);
+            PlayerPrefs.Save();
+            ////Debug.Log(countDown.timeRemaining);
+
+            PlayerPrefs.SetInt("Level1", 0);
+            PlayerPrefs.SetInt("LevelM1", 1);
+            PlayerPrefs.Save();
+        }
+        else
+        {
+            if (GameManager.Instance.SelectedPlayer == 0)
+            {
+                cultureCompleteImage.SetActive(false);
+                congratsPanel.transform.GetChild(1).transform.GetChild(0).gameObject.SetActive(false);
+                congratsPanel.transform.GetChild(1).transform.GetChild(1).gameObject.SetActive(true);//cultureCompleteImage.SetActive(false);
+
+                //door1Col.isTrigger = true;
+                congratsPanel.SetActive(true);
+                playerController.SetActive(false);
+                playerControllerCanvas.SetActive(false);
+                MainCanvas.SetActive(false);
+            }
+            else
+            {
+                GameUIManager.Instance.OnCompetitionComplete();
+            }
+        }
+
+    }
+    public void OnRoomCompleteNextBtnClick()
+    {
+        if (GameManager.Instance.IsMulti)
+        {
+            GameManager.Instance.SelectedPlayer++;
+            for (int i = 0; i < GData.Room.Length; i++)
+            {
+                GData.Room[i].No_Of_Obj_Complete = 0;
+                GData.Room[i].FoodQ[0].AnswerGiven = 0;
+                GData.Room[i].FoodQ[0].IsComplte = false;
+                GData.Room[i].HisQ[0].AnswerGiven = 0;
+                GData.Room[i].HisQ[0].IsComplte = false;
+                GData.Room[i].GeoQ[0].AnswerGiven = 0;
+                GData.Room[i].GeoQ[0].IsComplte = false;
+                GData.Room[i].CulQ[0].AnswerGiven = 0;
+                GData.Room[i].CulQ[0].IsComplte = false;
+            }
+            PersistentDataManager.instance.SaveData();
+            loadingManager.levelLoad(2);
+        }
+        else
+        {
+            loadingManager.levelLoad(1);
+        }
+    }
+    #region History Quiz Data
+
+    public void SetHistoryQuizData(int index)
+    {
+        //onclicks added or removed
+        TickButton1.onClick.RemoveAllListeners();
+        TickButton1.onClick.AddListener(() => AnswerBtnClick(historyOptionTexts[0]));
+
+        TickButton2.onClick.RemoveAllListeners();
+        TickButton2.onClick.AddListener(() => AnswerBtnClick(historyOptionTexts[1]));
+
+        ResetButton.onClick.RemoveAllListeners();
+        ResetButton.onClick.AddListener(() => ResetQuestionaPanel());
+
+        TickButton3.gameObject.SetActive(false);
+
+        selectedCategory = index;
+        SetHistoryOptionData();
+
+
+        //int temp = historyQuizIndex;
+
+        //historyQuizIndex = Random.Range(0, historyQues.Length);
+
+        //if (temp == historyQuizIndex)
+        //{
+        //    historyQuizIndex = Random.Range(0, historyQues.Length);
+        //}
+
+        ////Debug.Log(historyQuizIndex);
+
+        historyQuestonText.text = historyQues[GData.UKhistoryQuizIndex];
+
+        historyOptionTexts[0].text = histOp1[GData.UKhistoryQuizIndex].answer;
+        historyOptionTexts[1].text = histOp2[GData.UKhistoryQuizIndex].answer;
+
+        //setting style
+        //SetTextStyle(historyOptionTexts[0], historyOptionTexts[1]);
+
+        if (historyAns[GData.UKhistoryQuizIndex] == 0)
+        {
+            historyFinalAnswer = histOp1[GData.UKhistoryQuizIndex].answer;
+        }
+        else if (historyAns[GData.UKhistoryQuizIndex] == 1)
+        {
+            historyFinalAnswer = histOp2[GData.UKhistoryQuizIndex].answer;
+        }
+
+        //Debug.Log(historyFinalAnswer);
+    }
+
+    private void SetHistoryOptionData()
+    {
+
+        for (int i = 0; i < 5; i++)
+        {
+            historyQues = new string[5];
+            historyQues[i] = "";
+
+            historyAns = new int[5];
+            historyAns[i] = 0;
+        }
+
+
+
+        for (int i = 0; i < histOp1.Length; i++)
+        {
+            histOp1[i] = new Option();
+        }
+        for (int i = 0; i < histOp2.Length; i++)
+        {
+            histOp2[i] = new Option();
+        }
+
+        // CheckLanguage();
+        switch (GData.SelectedLanguage)
+        {
+            case 0:
+                for (int i = 0; i < 5; i++)
+                {
+                    historyQues[i] = TFData.questions[i];
+                    historyAns[i] = TFData.answersIndex[i];
+
+                    histOp1[i].answer = TFData.Op1[i];
+                    histOp2[i].answer = TFData.Op2[i];
+
+                }
+                break;
+            case 1:
+                for (int i = 0; i < 5; i++)
+                {
+                    historyQues[i] = TFData_Greek.questions[i];
+                    historyAns[i] = TFData_Greek.answersIndex[i];
+
+                    histOp1[i].answer = TFData_Greek.Op1[i];
+                    histOp2[i].answer = TFData_Greek.Op2[i];
+
+                }
+                break;
+            case 2:
+                for (int i = 0; i < 5; i++)
+                {
+                    historyQues[i] = TFData_Polish.questions[i];
+                    historyAns[i] = TFData_Polish.answersIndex[i];
+
+                    histOp1[i].answer = TFData_Polish.Op1[i];
+                    histOp2[i].answer = TFData_Polish.Op2[i];
+
+                }
+                break;
+        }
+    }
+
+    #endregion
+
+    #region Geography Quiz Data
+
+    public void SetGeographyQuizData(int index)
+    {
+        //onclicks added or removed
+        TickButton1.onClick.RemoveAllListeners();
+        TickButton1.onClick.AddListener(() => AnswerBtnClick(geographyOptionTexts[0]));
+
+        TickButton2.onClick.RemoveAllListeners();
+        TickButton2.onClick.AddListener(() => AnswerBtnClick(geographyOptionTexts[1]));
+
+        ResetButton.onClick.RemoveAllListeners();
+        ResetButton.onClick.AddListener(() => ResetQuestionaPanel());
+
+        TickButton3.gameObject.SetActive(false);
+
+        selectedCategory = index;
+        SetGeographyOptionData();
+
+        //int temp = geographyQuizIndex;
+
+        //geographyQuizIndex = Random.Range(0, geographyQues.Length);
+
+        //if (temp == geographyQuizIndex)
+        //{
+        //    geographyQuizIndex = Random.Range(0, geographyQues.Length);
+        //}
+
+        ////Debug.Log(geographyQuizIndex);
+
+        geographyQuestonText.text = geographyQues[GData.UKgeographyQuizIndex];
+
+        geographyOptionTexts[0].text = geogOp1[GData.UKgeographyQuizIndex].answer;
+        geographyOptionTexts[1].text = geogOp2[GData.UKgeographyQuizIndex].answer;
+
+        //setting style
+        //SetTextStyle(geographyOptionTexts[0], geographyOptionTexts[1]);
+
+        if (geographyAns[GData.UKgeographyQuizIndex] == 0)
+        {
+            geographyFinalAnswer = geogOp1[GData.UKgeographyQuizIndex].answer;
+        }
+        else if (geographyAns[GData.UKgeographyQuizIndex] == 1)
+        {
+            geographyFinalAnswer = geogOp2[GData.UKgeographyQuizIndex].answer;
+        }
+
+        //Debug.Log(geographyFinalAnswer);
+    }
+
+    private void SetGeographyOptionData()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            geographyQues = new string[5];
+            geographyQues[i] = "";
+
+            geographyAns = new int[5];
+            geographyAns[i] = 0;
+        }
+
+
+
+        for (int i = 0; i < geogOp1.Length; i++)
+        {
+            geogOp1[i] = new Option();
+        }
+        for (int i = 0; i < geogOp2.Length; i++)
+        {
+            geogOp2[i] = new Option();
+        }
+        switch (GData.SelectedLanguage)
+        {
+            case 0:
+                for (int i = 0; i < 5; i++)
+                {
+                    geographyQues[i] = TFData.questions[i + 5];
+                    geographyAns[i] = TFData.answersIndex[i + 5];
+
+                    geogOp1[i].answer = TFData.Op1[i + 5];
+                    geogOp2[i].answer = TFData.Op2[i + 5];
+
+                }
+                break;
+            case 1:
+                for (int i = 0; i < 5; i++)
+                {
+                    geographyQues[i] = TFData_Greek.questions[i + 5];
+                    geographyAns[i] = TFData_Greek.answersIndex[i + 5];
+
+                    geogOp1[i].answer = TFData_Greek.Op1[i + 5];
+                    geogOp2[i].answer = TFData_Greek.Op2[i + 5];
+
+                }
+                break;
+            case 2:
+                for (int i = 0; i < 5; i++)
+                {
+                    geographyQues[i] = TFData_Polish.questions[i + 5];
+                    geographyAns[i] = TFData_Polish.answersIndex[i + 5];
+
+                    geogOp1[i].answer = TFData_Polish.Op1[i + 5];
+                    geogOp2[i].answer = TFData_Polish.Op2[i + 5];
+
+                }
+                break;
+        }
+
+    }
+
+    #endregion
+
+    #region Food Quiz Data
+
+    public void SetFoodQuizData(int index)
+    {
+        //onclicks added or removed
+        TickButton1.onClick.RemoveAllListeners();
+        TickButton1.onClick.AddListener(() => AnswerBtnClick(foodOptionTexts[0]));
+
+        TickButton2.onClick.RemoveAllListeners();
+        TickButton2.onClick.AddListener(() => AnswerBtnClick(foodOptionTexts[1]));
+
+        ResetButton.onClick.RemoveAllListeners();
+        ResetButton.onClick.AddListener(() => ResetQuestionaPanel());
+
+        TickButton3.gameObject.SetActive(false);
+
+        selectedCategory = index;
+        SetFoodOptionData();
+
+        //int temp = foodQuizIndex;
+
+        //foodQuizIndex = Random.Range(0, foodQues.Length);
+
+        //if (temp == foodQuizIndex)
+        //{
+        //    foodQuizIndex = Random.Range(0, foodQues.Length);
+        //}
+
+        ////Debug.Log(foodQuizIndex);
+
+        foodQuestonText.text = foodQues[GData.UKfoodQuizIndex];
+
+        foodOptionTexts[0].text = foodOp1[GData.UKfoodQuizIndex].answer;
+        foodOptionTexts[1].text = foodOp2[GData.UKfoodQuizIndex].answer;
+
+        //setting style
+        //SetTextStyle(foodOptionTexts[0], foodOptionTexts[1]);
+
+        if (foodAns[GData.UKfoodQuizIndex] == 0)
+        {
+            foodFinalAnswer = foodOp1[GData.UKfoodQuizIndex].answer;
+        }
+        else if (foodAns[GData.UKfoodQuizIndex] == 1)
+        {
+            foodFinalAnswer = foodOp2[GData.UKfoodQuizIndex].answer;
+        }
+
+
+        //Debug.Log(foodFinalAnswer);
+    }
+
+
+
+    private void SetFoodOptionData()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            foodQues = new string[5];
+            foodQues[i] = "";
+
+            foodAns = new int[5];
+            foodAns[i] = 0;
+        }
+
+
+        for (int i = 0; i < foodOp1.Length; i++)
+        {
+            foodOp1[i] = new Option();
+        }
+        for (int i = 0; i < foodOp2.Length; i++)
+        {
+            foodOp2[i] = new Option();
+        }
+
+        //for (int i = 0; i < 5; i++)
+        //{
+        //    foodQues[i] = TFData.questions[i + 10];
+        //    foodAns[i] = TFData.answersIndex[i + 10];
+
+        //    foodOp1[i].answer = TFData.Op1[i + 10];
+        //    foodOp2[i].answer = TFData.Op2[i + 10];
+        //}
+        switch (GData.SelectedLanguage)
+        {
+            case 0:
+                for (int i = 0; i < 5; i++)
+                {
+                    foodQues[i] = TFData.questions[i + 10];
+                    foodAns[i] = TFData.answersIndex[i + 10];
+
+                    foodOp1[i].answer = TFData.Op1[i + 10];
+                    foodOp2[i].answer = TFData.Op2[i + 10];
+
+                }
+                break;
+            case 1:
+                for (int i = 0; i < 5; i++)
+                {
+                    foodQues[i] = TFData_Greek.questions[i + 10];
+                    foodAns[i] = TFData_Greek.answersIndex[i + 10];
+
+                    foodOp1[i].answer = TFData_Greek.Op1[i + 10];
+                    foodOp2[i].answer = TFData_Greek.Op2[i + 10];
+
+                }
+                break;
+            case 2:
+                for (int i = 0; i < 5; i++)
+                {
+                    foodQues[i] = TFData_Polish.questions[i + 10];
+                    foodAns[i] = TFData_Polish.answersIndex[i + 10];
+
+                    foodOp1[i].answer = TFData_Polish.Op1[i + 10];
+                    foodOp2[i].answer = TFData_Polish.Op2[i + 10];
+
+                }
+                break;
+        }
+
+    }
+
+
+
+
+    #endregion
+
+    #region Culture Quiz Data
+
+    public void SetCultureQuizData(int index)
+    {
+        //onclicks added or removed
+        TickButton1.onClick.RemoveAllListeners();
+        TickButton1.onClick.AddListener(() => AnswerBtnClick(cultureOptionTexts[0]));
+
+        TickButton2.onClick.RemoveAllListeners();
+        TickButton2.onClick.AddListener(() => AnswerBtnClick(cultureOptionTexts[1]));
+
+        ResetButton.onClick.RemoveAllListeners();
+        ResetButton.onClick.AddListener(() => ResetQuestionaPanel());
+
+        TickButton3.gameObject.SetActive(false);
+
+        selectedCategory = index;
+        SetCultureOptionData();
+        //int temp = cultureQuizIndex;
+
+        //cultureQuizIndex = Random.Range(0, cultureQues.Length);
+
+        //if (temp == cultureQuizIndex)
+        //{
+        //    cultureQuizIndex = Random.Range(0, cultureQues.Length);
+        //}
+
+        ////Debug.Log(cultureQuizIndex);
+
+        cultureQuestonText.text = cultureQues[GData.UKcultureQuizIndex];
+
+        cultureOptionTexts[0].text = culOp1[GData.UKcultureQuizIndex].answer;
+        cultureOptionTexts[1].text = culOp2[GData.UKcultureQuizIndex].answer;
+
+        //setting style
+        //SetTextStyle(cultureOptionTexts[0], cultureOptionTexts[1]);
+
+        if (cultureAns[GData.UKcultureQuizIndex] == 0)
+        {
+            cultureFinalAnswer = culOp1[GData.UKcultureQuizIndex].answer;
+        }
+        else if (cultureAns[GData.UKcultureQuizIndex] == 1)
+        {
+            cultureFinalAnswer = culOp2[GData.UKcultureQuizIndex].answer;
+        }
+
+        //Debug.Log(cultureFinalAnswer);
+    }
+
+
+    private void SetCultureOptionData()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            cultureQues = new string[5];
+            cultureQues[i] = "";
+
+            cultureAns = new int[5];
+            cultureAns[i] = 0;
+        }
+
+
+        for (int i = 0; i < culOp1.Length; i++)
+        {
+            culOp1[i] = new Option();
+        }
+        for (int i = 0; i < culOp2.Length; i++)
+        {
+            culOp2[i] = new Option();
+        }
+
+        //for (int i = 0; i < 5; i++)
+        //{
+        //    cultureQues[i] = TFData.questions[i + 15];
+        //    cultureAns[i] = TFData.answersIndex[i + 15];
+
+        //    culOp1[i].answer = TFData.Op1[i + 15];
+        //    culOp2[i].answer = TFData.Op2[i + 15];
+        //}
+        switch (GData.SelectedLanguage)
+        {
+            case 0:
+                for (int i = 0; i < 5; i++)
+                {
+                    cultureQues[i] = TFData.questions[i + 15];
+                    cultureAns[i] = TFData.answersIndex[i + 15];
+
+                    culOp1[i].answer = TFData.Op1[i + 15];
+                    culOp2[i].answer = TFData.Op2[i + 15];
+
+                }
+                break;
+            case 1:
+                for (int i = 0; i < 5; i++)
+                {
+                    cultureQues[i] = TFData_Greek.questions[i + 15];
+                    cultureAns[i] = TFData_Greek.answersIndex[i + 15];
+
+                    culOp1[i].answer = TFData_Greek.Op1[i + 15];
+                    culOp2[i].answer = TFData_Greek.Op2[i + 15];
+
+                }
+                break;
+            case 2:
+                for (int i = 0; i < 5; i++)
+                {
+                    cultureQues[i] = TFData_Polish.questions[i + 15];
+                    cultureAns[i] = TFData_Polish.answersIndex[i + 15];
+
+                    culOp1[i].answer = TFData_Polish.Op1[i + 15];
+                    culOp2[i].answer = TFData_Polish.Op2[i + 15];
+
+                }
+                break;
+        }
+
+    }
+
+
+
+
+    #endregion
+
+
+
+    #region Common Functions
+
+
+    public class Option
+    {
+        public string answer;
+        public string tag;
+    }
+
+    private void SetTextStyle(Text text1, Text text2)
+    {
+        //increase fonts
+        text1.fontSize = 50;
+        text2.fontSize = 50;
+        //set fontstyle
+        text1.fontStyle = FontStyle.Bold;
+        text2.fontStyle = FontStyle.Bold;
+    }
+
+    private void RemoveTextStyleFunc()
+    {
+        historyOptionTexts[0].fontSize = 40;
+        historyOptionTexts[1].fontSize = 40;
+        historyOptionTexts[2].fontSize = 40;
+        historyOptionTexts[3].fontSize = 40;
+
+        historyOptionTexts[0].fontStyle = FontStyle.Bold;
+        historyOptionTexts[1].fontStyle = FontStyle.Bold;
+        historyOptionTexts[2].fontStyle = FontStyle.Bold;
+        historyOptionTexts[3].fontStyle = FontStyle.Bold;
+    }
+
+    public void ResetQuestionaPanel()
+    {
+        OptionButtonHandle(true);
+        if (PlayerPrefs.GetInt("levelcurrent") == 1)
+        {
+            if (!GameManager.Instance.IsMulti)  // For Singel Player
+            {
+                if (selectedCategory == 1 && PlayerPrefs.GetInt("UKHist", 0) < 3)
+                {
+                    SetHistoryQuizData(1);
+                    levelFailPanel.SetActive(false);
+                    quizPanel.SetActive(true);
+                }
+                else if (selectedCategory == 2 && PlayerPrefs.GetInt("UKGeo", 0) < 3)
+                {
+                    SetGeographyQuizData(2);
+                    levelFailPanel.SetActive(false);
+                    quizPanel.SetActive(true);
+                }
+                else if (selectedCategory == 3 && PlayerPrefs.GetInt("UKFood", 0) < 3)
+                {
+                    SetFoodQuizData(3);
+                    levelFailPanel.SetActive(false);
+                    quizPanel.SetActive(true);
+                }
+                else if (selectedCategory == 4 && PlayerPrefs.GetInt("UKCult", 0) < 3)
+                {
+                    SetCultureQuizData(4);
+                    levelFailPanel.SetActive(false);
+                    quizPanel.SetActive(true);
+                }
+
+                else
+                {
+                    levelFailPanel.SetActive(false);
+                    cameraobj.SetActive(false);
+                    Background.SetActive(true);
+                    //Debug.Log("Came here5");
+                    controller.SetActive(true);
+                    countDown.timeRemaining = GData.GameTime;
+                    CountDown.timerIsRunning = true;
+                    PlayerPrefs.SetFloat("TimeRemaining", countDown.timeRemaining);
+                    PlayerPrefs.Save();
+                }
+            }
+            else   /// For Multiplayer
+            {
+                if (selectedCategory == 1 && GData.Room[1].HisQ[0].AnswerGiven < GData.Room[1].HisQ[0].TotalQuestion)
+                {
+                    SetHistoryQuizData(1);
+                    levelFailPanel.SetActive(false);
+                    quizPanel.SetActive(true);
+                }
+                else if (selectedCategory == 2 && GData.Room[1].GeoQ[0].AnswerGiven < GData.Room[1].GeoQ[0].TotalQuestion)
+                {
+                    SetGeographyQuizData(2);
+                    levelFailPanel.SetActive(false);
+                    quizPanel.SetActive(true);
+                }
+                else if (selectedCategory == 3 && GData.Room[1].FoodQ[0].AnswerGiven < GData.Room[1].FoodQ[0].TotalQuestion /*PlayerPrefs.GetInt("UKFood", 0) < 3*/)
+                {
+                    SetFoodQuizData(3);
+                    levelFailPanel.SetActive(false);
+                    quizPanel.SetActive(true);
+                }
+                else if (selectedCategory == 4 && GData.Room[1].CulQ[0].AnswerGiven < GData.Room[1].CulQ[0].TotalQuestion /*PlayerPrefs.GetInt("UKCult", 0) < 3*/)
+                {
+                    SetCultureQuizData(4);
+                    levelFailPanel.SetActive(false);
+                    quizPanel.SetActive(true);
+                }
+
+                else
+                {
+                    levelFailPanel.SetActive(false);
+                    cameraobj.SetActive(false);
+                    Background.SetActive(false);
+                    //Debug.Log("Came here5");
+                    controller.SetActive(true);
+                    countDown.timeRemaining = GData.GameTime;
+                    CountDown.timerIsRunning = true;
+                    PlayerPrefs.SetFloat("TimeRemaining", countDown.timeRemaining);
+                    PlayerPrefs.Save();
+                }
+            }
+        }
+    }
+    // Select Catagry 1 is History Question
+    // Select Catagry 2 is Geographic Question
+    // Select Catagry 3 is Food Question
+    // Select Catagry 4 is Culture Question
+
+    public void AnswerBtnClick(Text text)
+    {
+        OptionButtonHandle(false);
+        if (PlayerPrefs.GetInt("levelcurrent") == 1)
+        {
+            //Debug.Log("Came here2");
+
+            if (selectedCategory == 1)
+            {
+                GData.UKhistoryQuizIndex = (GData.UKhistoryQuizIndex + 1) % historyQues.Length;
+                PersistentDataManager.instance.SaveData();
+                if (text.text.Equals(historyFinalAnswer) == true)
+                {
+                    RightAnswerHandler();
+                }
+                else
+                {
+                    WrongAnswerHandler();
+                }
+            }
+            else if (selectedCategory == 2)
+            {
+                GData.UKgeographyQuizIndex = (GData.UKgeographyQuizIndex + 1) % geographyQues.Length;
+                PersistentDataManager.instance.SaveData();
+                if (text.text.Equals(geographyFinalAnswer) == true)
+                {
+                    RightAnswerHandler();
+                }
+                else
+                {
+                    WrongAnswerHandler();
+                }
+            }
+            else if (selectedCategory == 3)
+            {
+                GData.UKfoodQuizIndex = (GData.UKfoodQuizIndex + 1) % foodQues.Length;
+                PersistentDataManager.instance.SaveData();
+                if (text.text.Equals(foodFinalAnswer) == true)
+                {
+                    RightAnswerHandler();
+                }
+                else
+                {
+                    WrongAnswerHandler();
+                }
+            }
+            else if (selectedCategory == 4)
+            {
+                GData.UKcultureQuizIndex = (GData.UKcultureQuizIndex + 1) % cultureQues.Length;
+                PersistentDataManager.instance.SaveData();
+                if (text.text.Equals(cultureFinalAnswer) == true)
+                {
+                    RightAnswerHandler();
+                }
+                else
+                {
+                    WrongAnswerHandler();
+                }
+            }
+        }
+    }
+    private void OptionButtonHandle(bool Status)
+    {
+        TickButton1.interactable = Status;
+        TickButton2.interactable = Status;
+        TickButton3.interactable = Status;
+    }
+    public void RightAnswerHandler()
+    {
+        CorrectAnswerText.gameObject.SetActive(true);
+        Confetti1.gameObject.SetActive(true);
+        Confetti2.gameObject.SetActive(true);
+        Confetti1.Play();
+        Confetti2.Play();
+        StartCoroutine(CorrectAnswerWait());
+        if (GameManager.Instance.IsMulti)
+        {
+            GData.Player[GameManager.Instance.SelectedPlayer].RightAnswer++;
+            PersistentDataManager.instance.SaveData();
+        }
+        else
+        {
+            //PlayerPrefs.SetInt("UKscore", PlayerPrefs.GetInt("UKscore") + 5);
+        }
+    }
+    public void WrongAnswerHandler()
+    {
+        WrongAnswerText.gameObject.SetActive(true);
+        StartCoroutine(WrongAnswerwait());
+        if (GameManager.Instance.IsMulti)
+        {
+            StartCoroutine(CorrectAnswerWait());
+            GData.Player[GameManager.Instance.SelectedPlayer].WrongAnswer++;
+            PersistentDataManager.instance.SaveData();
+        }
+    }
+    IEnumerator CorrectAnswerWait()
+    {
+        yield return new WaitForSeconds(1f);
+        Confetti1.gameObject.SetActive(false);
+        Confetti2.gameObject.SetActive(false);
+        CorrectAnswerText.gameObject.SetActive(false);
+        WrongAnswerText.gameObject.SetActive(false);
+        if (!GameManager.Instance.IsMulti)
+        {
+            if (selectedCategory == 1)
+            {
+                if (PlayerPrefs.GetInt("UKHist", 0) < 3)
+                {
+                    PlayerPrefs.SetInt("UKHist", (PlayerPrefs.GetInt("UKHist")) + 1);
+                    PlayerPrefs.SetInt("UKscore", PlayerPrefs.GetInt("UKscore") + 5);
+                    PlayerPrefs.Save();
+                    if (PlayerPrefs.GetInt("UKHist", 0) < 3)
+                    {
+                        SetHistoryQuizData(1);
+                    }
+                    else if (PlayerPrefs.GetInt("UKHist", 0) == 3)
+                    {
+                        PlayerPrefs.SetInt("Level1", (PlayerPrefs.GetInt("Level1")) + 1);
+                        PlayerPrefs.Save();
+
+                        quizHist.interactable = false;
+                        quizPanel.SetActive(false);
+                        levelCompletePanel.SetActive(true);
+                        LevelCompleteText.text = PlayerPrefs.GetInt("UKscore").ToString();
+                        Background.SetActive(true);
+                        ReadQuestion.interactable = false;
+                        GData.OffRoom[GData.SelectedRoom].RoomObj[selectedCategory - 1].IsComplete = true;
+                        PersistentDataManager.instance.SaveData();
+                    }
+                }
+            }
+            else if (selectedCategory == 2)
+            {
+                if (PlayerPrefs.GetInt("UKGeo", 0) < 3)
+                {
+                    PlayerPrefs.SetInt("UKGeo", (PlayerPrefs.GetInt("UKGeo")) + 1);
+                    PlayerPrefs.SetInt("UKscore", PlayerPrefs.GetInt("UKscore") + 5);
+                    PlayerPrefs.Save();
+
+                    if (PlayerPrefs.GetInt("UKGeo", 0) < 3)
+                    {
+                        SetGeographyQuizData(2);
+                    }
+                    else if (PlayerPrefs.GetInt("UKGeo", 0) == 3)
+                    {
+                        PlayerPrefs.SetInt("Level1", (PlayerPrefs.GetInt("Level1")) + 1);
+                        PlayerPrefs.Save();
+
+                        //Debug.Log("Came here 14 : " + PlayerPrefs.GetInt("Level1"));
+
+                        quizGeo.interactable = false;
+                        quizPanel.SetActive(false);
+                        levelCompletePanel.SetActive(true);
+                        LevelCompleteText.text = PlayerPrefs.GetInt("UKscore").ToString();
+                        Background.SetActive(true);
+                        ReadQuestion.interactable = false;
+                        GData.OffRoom[GData.SelectedRoom].RoomObj[selectedCategory - 1].IsComplete = true;
+                        PersistentDataManager.instance.SaveData();
+                    }
+                }
+            }
+            else if (selectedCategory == 3)
+            {
+                if (PlayerPrefs.GetInt("UKFood", 0) < 3)
+                {
+                    PlayerPrefs.SetInt("UKFood", (PlayerPrefs.GetInt("UKFood")) + 1);
+                    PlayerPrefs.SetInt("UKscore", PlayerPrefs.GetInt("UKscore") + 5);
+                    PlayerPrefs.Save();
+
+                    if (PlayerPrefs.GetInt("UKFood", 0) < 3)
+                    {
+                        SetFoodQuizData(3);
+                    }
+                    else if (PlayerPrefs.GetInt("UKFood", 0) == 3)
+                    {
+                        PlayerPrefs.SetInt("Level1", (PlayerPrefs.GetInt("Level1")) + 1);
+                        PlayerPrefs.Save();
+
+                        quizFood.interactable = false;
+
+                        quizPanel.SetActive(false);
+                        levelCompletePanel.SetActive(true);
+                        LevelCompleteText.text = PlayerPrefs.GetInt("UKscore").ToString();
+                        Background.SetActive(true);
+                        ReadQuestion.interactable = false;
+                        GData.OffRoom[GData.SelectedRoom].RoomObj[selectedCategory - 1].IsComplete = true;
+                        PersistentDataManager.instance.SaveData();
+                    }
+                }
+            }
+            else if (selectedCategory == 4)
+            {
+                if (PlayerPrefs.GetInt("UKCult", 0) < 3)
+                {
+                    PlayerPrefs.SetInt("UKCult", (PlayerPrefs.GetInt("UKCult")) + 1);
+                    PlayerPrefs.SetInt("UKscore", PlayerPrefs.GetInt("UKscore") + 5);
+                    PlayerPrefs.Save();
+                    if (PlayerPrefs.GetInt("UKCult", 0) < 3)
+                    {
+                        SetCultureQuizData(4);
+                    }
+                    else if (PlayerPrefs.GetInt("UKCult", 0) == 3)
+                    {
+                        PlayerPrefs.SetInt("Level1", (PlayerPrefs.GetInt("Level1")) + 1);
+                        PlayerPrefs.Save();
+
+                        quizCult.interactable = false;
+
+                        quizPanel.SetActive(false);
+                        levelCompletePanel.SetActive(true);
+                        LevelCompleteText.text = PlayerPrefs.GetInt("UKscore").ToString();
+                        Background.SetActive(true);
+                        ReadQuestion.interactable = false;
+                        GData.OffRoom[GData.SelectedRoom].RoomObj[selectedCategory - 1].IsComplete = true;
+                        PersistentDataManager.instance.SaveData();
+                    }
+                }
+            }
+        }
+        else
+        {
+            if (selectedCategory == 1)
+            {
+                if (GData.Room[0].HisQ[0].AnswerGiven < 3)
+                {
+                    GData.Room[0].HisQ[0].AnswerGiven++;
+                    if (GData.Room[0].HisQ[0].AnswerGiven < 3)
+                    {
+                        SetHistoryQuizData(1);
+                    }
+                    else if (GData.Room[0].HisQ[0].AnswerGiven == 3)
+                    {
+                        OnMultiplayerObjComplete();
+                        ReadQuestion.interactable = false;
+                    }
+                }
+            }
+            else if (selectedCategory == 2)
+            {
+                if (GData.Room[0].GeoQ[0].AnswerGiven < 3)
+                {
+                    GData.Room[0].GeoQ[0].AnswerGiven++;
+
+                    if (GData.Room[0].GeoQ[0].AnswerGiven < 3)
+                    {
+                        SetGeographyQuizData(2);
+                    }
+                    else if (GData.Room[0].GeoQ[0].AnswerGiven == 3)
+                    {
+                        OnMultiplayerObjComplete();
+                        ReadQuestion.interactable = false;
+                    }
+                }
+            }
+            else if (selectedCategory == 3)
+            {
+                if (GData.Room[0].FoodQ[0].AnswerGiven < 3)
+                {
+                    GData.Room[0].FoodQ[0].AnswerGiven++;
+                    if (GData.Room[0].FoodQ[0].AnswerGiven < 3)
+                    {
+                        SetFoodQuizData(3);
+                    }
+                    else if (GData.Room[0].FoodQ[0].AnswerGiven == 3)
+                    {
+                        OnMultiplayerObjComplete();
+                        ReadQuestion.interactable = false;
+                    }
+                }
+            }
+            else if (selectedCategory == 4)
+            {
+                if (GData.Room[0].CulQ[0].AnswerGiven < 3)
+                {
+                    GData.Room[0].CulQ[0].AnswerGiven++;
+                    if (GData.Room[0].CulQ[0].AnswerGiven < 3)
+                    {
+                        SetCultureQuizData(4);
+                    }
+                    else if (GData.Room[0].CulQ[0].AnswerGiven == 3)
+                    {
+                        ReadQuestion.interactable = false;
+                        OnMultiplayerObjComplete();
+                    }
+                }
+            }
+        }
+        UpdateGameProgress();
+    }
+    public void OnMultiplayerObjComplete()
+    {
+        quizPanel.SetActive(false);
+        levelCompletePanel.SetActive(true);
+        levelCompletePanel.transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(false);
+        levelCompletePanel.transform.GetChild(0).transform.GetChild(2).gameObject.SetActive(false);
+        switch(GData.SelectedLanguage)
+        {
+            case 0:
+                 levelCompletePanel.transform.GetChild(1).GetComponent<Text>().text = "Object Complete";
+                break;
+
+            case 1:
+                levelCompletePanel.transform.GetChild(1).GetComponent<Text>().text = "Αντικείμενο Ολοκληρώθηκε";
+                break;
+
+            case 2:
+                levelCompletePanel.transform.GetChild(1).GetComponent<Text>().text = "Obiekt ukończony";
+                break;
+        }
+       
+        LevelCompleteText.gameObject.SetActive(false);
+        Background.SetActive(true);
+    }
+    IEnumerator WrongAnswerwait()
+    {
+        yield return new WaitForSeconds(1f);
+        CorrectAnswerText.gameObject.SetActive(false);
+        WrongAnswerText.gameObject.SetActive(false);
+        if (!GameManager.Instance.IsMulti)
+        {
+            if (selectedCategory == 1)
+            {
+                if (PlayerPrefs.GetInt("UKHist", 0) < 3)
+                {
+                    PlayerPrefs.SetInt("UKHist", (PlayerPrefs.GetInt("UKHist")) + 1);
+                    PlayerPrefs.Save();
+                    if (PlayerPrefs.GetInt("UKHist", 0) < 3)
+                    {
+                        SetHistoryQuizData(1);
+                    }
+                    else if (PlayerPrefs.GetInt("UKHist", 0) == 3)
+                    {
+                        PlayerPrefs.SetInt("Level1", (PlayerPrefs.GetInt("Level1")) + 1);
+                        PlayerPrefs.Save();
+
+                        quizHist.interactable = false;
+                        quizPanel.SetActive(false);
+                        levelCompletePanel.SetActive(true);
+                        LevelCompleteText.text = PlayerPrefs.GetInt("UKscore").ToString();
+                        Background.SetActive(true);
+                        ReadQuestion.interactable = false;
+                        GData.OffRoom[GData.SelectedRoom].RoomObj[selectedCategory - 1].IsComplete = true;
+                        PersistentDataManager.instance.SaveData();
+                    }
+                }
+            }
+            else if (selectedCategory == 2)
+            {
+                if (PlayerPrefs.GetInt("UKGeo", 0) < 3)
+                {
+                    PlayerPrefs.SetInt("UKGeo", (PlayerPrefs.GetInt("UKGeo")) + 1);
+                    PlayerPrefs.Save();
+
+                    if (PlayerPrefs.GetInt("UKGeo", 0) < 3)
+                    {
+                        SetGeographyQuizData(2);
+                    }
+                    else if (PlayerPrefs.GetInt("UKGeo", 0) == 3)
+                    {
+                        PlayerPrefs.SetInt("Level1", (PlayerPrefs.GetInt("Level1")) + 1);
+                        PlayerPrefs.Save();
+
+                        //Debug.Log("Came here 14 : " + PlayerPrefs.GetInt("Level1"));
+
+                        quizGeo.interactable = false;
+                        quizPanel.SetActive(false);
+                        levelCompletePanel.SetActive(true);
+                        LevelCompleteText.text = PlayerPrefs.GetInt("UKscore").ToString();
+                        Background.SetActive(true);
+                        ReadQuestion.interactable = false;
+                        GData.OffRoom[GData.SelectedRoom].RoomObj[selectedCategory - 1].IsComplete = true;
+                        PersistentDataManager.instance.SaveData();
+                    }
+                }
+            }
+            else if (selectedCategory == 3)
+            {
+                if (PlayerPrefs.GetInt("UKFood", 0) < 3)
+                {
+                    PlayerPrefs.SetInt("UKFood", (PlayerPrefs.GetInt("UKFood")) + 1);
+                    PlayerPrefs.Save();
+
+                    if (PlayerPrefs.GetInt("UKFood", 0) < 3)
+                    {
+                        SetFoodQuizData(3);
+                    }
+                    else if (PlayerPrefs.GetInt("UKFood", 0) == 3)
+                    {
+                        PlayerPrefs.SetInt("Level1", (PlayerPrefs.GetInt("Level1")) + 1);
+                        PlayerPrefs.Save();
+
+                        quizFood.interactable = false;
+
+                        quizPanel.SetActive(false);
+                        levelCompletePanel.SetActive(true);
+                        LevelCompleteText.text = PlayerPrefs.GetInt("UKscore").ToString();
+                        Background.SetActive(true);
+                        ReadQuestion.interactable = false;
+                        GData.OffRoom[GData.SelectedRoom].RoomObj[selectedCategory - 1].IsComplete = true;
+                        PersistentDataManager.instance.SaveData();
+                    }
+                }
+            }
+            else if (selectedCategory == 4)
+            {
+                if (PlayerPrefs.GetInt("UKCult", 0) < 3)
+                {
+                    PlayerPrefs.SetInt("UKCult", (PlayerPrefs.GetInt("UKCult")) + 1);
+                    PlayerPrefs.Save();
+                    if (PlayerPrefs.GetInt("UKCult", 0) < 3)
+                    {
+                        SetCultureQuizData(4);
+                    }
+                    else if (PlayerPrefs.GetInt("UKCult", 0) == 3)
+                    {
+                        PlayerPrefs.SetInt("Level1", (PlayerPrefs.GetInt("Level1")) + 1);
+                        PlayerPrefs.Save();
+
+                        quizCult.interactable = false;
+
+                        quizPanel.SetActive(false);
+                        levelCompletePanel.SetActive(true);
+                        LevelCompleteText.text = PlayerPrefs.GetInt("UKscore").ToString();
+                        Background.SetActive(true);
+                        ReadQuestion.interactable = false;
+                        GData.OffRoom[GData.SelectedRoom].RoomObj[selectedCategory - 1].IsComplete = true;
+                        PersistentDataManager.instance.SaveData();
+                    }
+                }
+            }
+        }
+        UpdateGameProgress();
+    }
+
+
+    public void BackToMenu()
+    {
+        //fader.SetActive(true);
+        //FadeAnimation obj = fader.GetComponent<FadeAnimation>();
+        //obj.FadeInAnim();
+        //StartCoroutine(LoadScene(1));
+
+
+        ////        SceneManager.LoadSceneAsync(0);
+        //MainMenuManager.backFromGame = true;
+    }
+    #endregion
+
+}

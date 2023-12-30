@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38fa2ca5f64c5154f959abf368727ae3, type: 3}
+  m_Name: GroomingTFData
+  m_EditorClassIdentifier: 
+  quizType: 1
+  roomIndex: 0
+  questions:
+  - 'In online grooming, the use of social media also makes choosing a susceptible
+    victim more straightforward for the offender. '
+  - 'In grooming and online grooming, the abuser can only be someone unknown. '
+  - In online grooming, the perpetrator is usually a young person.
+  - In online grooming, the abuser always hides his real personal information, claiming
+    to be someone else.
+  - 'In online grooming, the abuser may not hide his age and gender. '
+  - 'In online grooming, the groomer may pose as an aspirational figure, such as
+    a coach, modeling agent, talent scout, influencer, celebrity and others. '
+  - 'In online grooming, one of the abuser''s goals is to eventually meet the prospective
+    victim in real life. '
+  - In grooming, victims can also be seduced by family members
+  - In online grooming, the purpose of the abuser is to seduce his potential victim
+    sexually.
+  - In online grooming, the groomer will approach his potential victims through social
+    networks.
+  - 'In online grooming, the abuser will tell his prospective victim that they have
+    no common interests. '
+  - 'In online grooming, discussions of sexual content, are not of interest to the
+    abuser. '
+  - 'One of the signs of online seduction is for the abuser to ask the prospective
+    victim to keep the conversation private. '
+  - The way to protect yourself from online seduction is to stay off the internet
+    altogether.
+  - It is okay to meet a stranger you just met online in person.
+  - On the internet, you shouldn't be careful where you use your personal data.
+  - Whatever happens to you on the Internet, you must not inform an adult under any
+    circumstances.
+  - The online seduction happens within a certain period of time.
+  - In   online   grooming,   the  groomer,  may  manipulate  children  to  send 
+    photos  or blackmailing them with photos the child may have already sent.
+  - In  online  grooming,  the  abuser  sends  sexual  messages  that  could  be 
+    disguised  as compliments or questions about past sexual experience.
+  Op1:
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  Op2:
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  answersIndex: 0000000001000000010000000100000000000000000000000000000000000000000000000000000001000000010000000000000001000000010000000100000001000000010000000000000000000000

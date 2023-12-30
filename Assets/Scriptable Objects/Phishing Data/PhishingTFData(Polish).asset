@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38fa2ca5f64c5154f959abf368727ae3, type: 3}
+  m_Name: PhishingTFData(Polish)
+  m_EditorClassIdentifier: 
+  quizType: 1
+  roomIndex: 4
+  questions:
+  - "Phishing to metoda \u0142owienia ryb"
+  - "Wy\u0142udzanie informacji mo\u017Ce spowodowa\u0107 utrat\u0119 oszcz\u0119dno\u015Bci
+    \u017Cycia. "
+  - "Phishing s\u0142u\u017Cy do wy\u0142udzania poufnych informacji. "
+  - "Phishing dotyczy tylko wiadomo\u015Bci e-mail."
+  - 'hishing nie jest niebezpieczny. '
+  - "Istnieje mo\u017Cliwo\u015B\u0107 podszycia si\u0119 pod nadawc\u0119 poprzez
+    SMS/e-mail."
+  - "Otrzyma\u0142em wiadomo\u015B\u0107 SMS od firmy kurierskiej (INPOST, UPS, DHLl
+    itp.) o dop\u0142acie. Klikni\u0119cie w link w wiadomo\u015Bci jest bezpieczne."
+  - "Znalaz\u0142em ofert\u0119 darmowego smartfona prosto od producenta w zamian
+    za wype\u0142nienie formularza z danymi osobowymi. Mo\u017Cesz bezpiecznie wype\u0142ni\u0107
+    formularz swoimi danymi osobowymi. "
+  - "Kierownik banku w Hongkongu chce mi da\u0107 20 milion\xF3w dolar\xF3w, je\u015Bli
+    podam mu swoje dane kontaktowe, prawdopodobnie dostan\u0119 pieni\u0105dze."
+  - "ekarz wojskowy pracuj\u0105cy na \u0142odzi podwodnej mnie kocha. Chce si\u0119
+    ze mn\u0105 zobaczy\u0107, ale nie ma pieni\u0119dzy na podr\xF3\u017C do mnie.
+    My\u015Bl\u0119, \u017Ce powinienem/powinnam wys\u0142a\u0107 mu 3000 $ za bilet. "
+  - "Znajomy, kt\xF3ry podr\xF3\u017Cuje do innego kraju, napisa\u0142 mi e-mailem,
+    \u017Ce zosta\u0142 okradziony i \u017Ce potrzebuje pieni\u0119dzy na bilet powrotny.
+    Lepiej do niego zadzwoni\u0107 i upewni\u0107 si\u0119, \u017Ce to naprawd\u0119
+    on przed wys\u0142aniem jakichkolwiek pieni\u0119dzy."
+  - "Znajomy z Facebooka chce, \u017Cebym doda\u0142 go ponownie do moich znajomych.
+    Mog\u0119 go bezpiecznie doda\u0107 do znajomych."
+  - "Otrzyma\u0142em wiadomo\u015B\u0107 e-mail, \u017Ce moje has\u0142o wygas\u0142o
+    i musz\u0119 ustawi\u0107 nowe. Nie pami\u0119tam, aby moje has\u0142o wygas\u0142o.
+    W ka\u017Cdym razie powinienem klikn\u0105\u0107 link z wiadomo\u015Bci e-mail
+    i zmieni\u0107 has\u0142o. "
+  - "O nie! Znajomy napisa\u0142, \u017Ce wyciek\u0142y moje nagie zdj\u0119cia.
+    Aby je zobaczy\u0107 i usun\u0105\u0107, musz\u0119 poda\u0107 has\u0142o do
+    mojego konta na Facebooku. Powinienem to zrobi\u0107 jak najszybciej. "
+  - "Dzwoni policja. Moje konto bankowe zosta\u0142o zhakowane. M\xF3wi\u0105, \u017Ce
+    musz\u0119 natychmiast przela\u0107 pieni\u0105dze na policyjne konto. Powinienem
+    wykona\u0107 rozkaz."
+  - "Bank wysy\u0142a wiadomo\u015B\u0107 e-mail z pro\u015Bb\u0105 o zmian\u0119
+    has\u0142a. Za\u0142\u0105czony link mo\u017Ce prowadzi\u0107 do fa\u0142szywej
+    strony."
+  - "Link do Twojego banku w witrynie Google mo\u017Ce prowadzi\u0107 do fa\u0142szywej
+    witryny. "
+  - "M\xF3j nowy znajomy na Facebooku jest super fajny. Prosi mnie o moje nagie zdj\u0119cia.
+    Powinienem by\u0107 czujny i nie wysy\u0142a\u0107 takich zdj\u0119\u0107. "
+  - "Znana marka rozdaje na Facebooku uszkodzone produkty. Cena jest fantastyczna.
+    To chyba zbyt pi\u0119kne, aby mog\u0142o by\u0107 prawdziwe. "
+  - "Wykonuj\u0105c przelewy na komputerze zawsze wklejam numer rachunku metod\u0105
+    \u201Ekopiuj wklej\u201D. Mam jednak w\u0105tpliwo\u015Bci. To mo\u017Ce by\u0107
+    niebezpieczne. "
+  - "\u0141\u0105czenie si\u0119 z bankiem ze szko\u0142y lub sieci hotelowej jest
+    zawsze bezpieczne. "
+  - "Dzwoni administrator sieci szkolnej i prosi o has\u0142o. Co\u015B tu jest nie
+    tak. "
+  Op1:
+  - "\u03A3\u03C9\u03C3\u03C4\u03CC"
+  - "\u03A3\u03C9\u03C3\u03C4\u03CC"
+  - "\u03A3\u03C9\u03C3\u03C4\u03CC"
+  - "\u03A3\u03C9\u03C3\u03C4\u03CC"
+  - "\u03A3\u03C9\u03C3\u03C4\u03CC"
+  - "\u03A3\u03C9\u03C3\u03C4\u03CC"
+  - "\u03A3\u03C9\u03C3\u03C4\u03CC"
+  - "\u03A3\u03C9\u03C3\u03C4\u03CC"
+  - "\u03A3\u03C9\u03C3\u03C4\u03CC"
+  - "\u03A3\u03C9\u03C3\u03C4\u03CC"
+  - "\u03A3\u03C9\u03C3\u03C4\u03CC"
+  - "\u03A3\u03C9\u03C3\u03C4\u03CC"
+  - "\u03A3\u03C9\u03C3\u03C4\u03CC"
+  - "\u03A3\u03C9\u03C3\u03C4\u03CC"
+  - "\u03A3\u03C9\u03C3\u03C4\u03CC"
+  - "\u03A3\u03C9\u03C3\u03C4\u03CC"
+  - "\u03A3\u03C9\u03C3\u03C4\u03CC"
+  - "\u03A3\u03C9\u03C3\u03C4\u03CC"
+  - "\u03A3\u03C9\u03C3\u03C4\u03CC"
+  - "\u03A3\u03C9\u03C3\u03C4\u03CC"
+  - "\u03A3\u03C9\u03C3\u03C4\u03CC"
+  - "\u03A3\u03C9\u03C3\u03C4\u03CC"
+  Op2:
+  - "\u039B\u03AC\u03B8\u03BF\u03C2"
+  - "\u039B\u03AC\u03B8\u03BF\u03C2"
+  - "\u039B\u03AC\u03B8\u03BF\u03C2"
+  - "\u039B\u03AC\u03B8\u03BF\u03C2"
+  - "\u039B\u03AC\u03B8\u03BF\u03C2"
+  - "\u039B\u03AC\u03B8\u03BF\u03C2"
+  - "\u039B\u03AC\u03B8\u03BF\u03C2"
+  - "\u039B\u03AC\u03B8\u03BF\u03C2"
+  - "\u039B\u03AC\u03B8\u03BF\u03C2"
+  - "\u039B\u03AC\u03B8\u03BF\u03C2"
+  - "\u039B\u03AC\u03B8\u03BF\u03C2"
+  - "\u039B\u03AC\u03B8\u03BF\u03C2"
+  - "\u039B\u03AC\u03B8\u03BF\u03C2"
+  - "\u039B\u03AC\u03B8\u03BF\u03C2"
+  - "\u039B\u03AC\u03B8\u03BF\u03C2"
+  - "\u039B\u03AC\u03B8\u03BF\u03C2"
+  - "\u039B\u03AC\u03B8\u03BF\u03C2"
+  - "\u039B\u03AC\u03B8\u03BF\u03C2"
+  - "\u039B\u03AC\u03B8\u03BF\u03C2"
+  - "\u039B\u03AC\u03B8\u03BF\u03C2"
+  - "\u039B\u03AC\u03B8\u03BF\u03C2"
+  - "\u039B\u03AC\u03B8\u03BF\u03C2"
+  answersIndex: 01000000000000000000000001000000010000000000000001000000010000000100000001000000000000000100000001000000010000000100000000000000000000000000000000000000000000000100000000000000

@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38fa2ca5f64c5154f959abf368727ae3, type: 3}
+  m_Name: PhishingTFData
+  m_EditorClassIdentifier: 
+  quizType: 1
+  roomIndex: 4
+  questions:
+  - Phishing is a method of catching fish.
+  - Life Savings Can Be Lost by phishing.
+  - 'Phishing is used to get your confidential info. '
+  - 'Phishing only affects e-mails. '
+  - 'Phishing is not dangerous. '
+  - It is possible to spoof the sender via SMS / email.
+  - I received a text message from a courier company (INPOST, UPS, DHLl, etc.) about
+    the surcharge. It is safe to click on the link in the message.
+  - I found an offer of a free smartphone straight from the manufacturer in exchange
+    for filling out a form with personal data. You can safely fill in the form with
+    your personal data.
+  - 'A Hong Kong bank manager wants to give me $ 20M if I give him my contact details,
+    I will probably get the money. '
+  - A military medic working on a submarine loves me. He wants to see me, but he
+    has no money to travel to me. I think I should send him $ 3000 for the ticket.
+  - A friend who travels to another country emailed me that he had been robbed and
+    that he needed money for a return ticket. It is better to call him and make sure
+    it's really him before sending any money.
+  - 'A friend from Facebook wants to me to add him/her to my friends again. I can
+    safely add him to my friends. '
+  - I got an email that my password has expired and I need to set a new one. I don't
+    remember my password expiring. Anyway, I should click on the link from the email
+    and change the password.
+  - Oh no! A friend wrote that my nude photos leaked. To see them and delete them,
+    I have to enter the password for my Facebook account. I should do it ASAP.
+  - 'The police are calling. My bank account has been hacked. They say I need to
+    transfer the money to the police account immediately. I should obey the order. '
+  - The bank sends an e-mail with a request to change the password. The attached
+    link may lead to a bogus page.
+  - 'A link to your bank on the Google site could lead to a fake site. '
+  - 'My new Facebook friend is super cool. He''s asking me for my nude photos. I
+    should be vigilant and not send such pictures. '
+  - 'A well-known brand gives away damaged products on Facebook. The price is fantastic.
+    This is probably too good to be true. '
+  - "When I make transfers on my computer, I always paste the account number with
+    the \u2018copy paste\u2019 method. However, I have doubts. It could be dangerous."
+  - It is always safe to connect to your bank from your school or hotel network.
+  - The school network admin calls and asks for a password. Something is not right
+    here.
+  Op1:
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  Op2:
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  answersIndex: 01000000000000000000000001000000010000000000000001000000010000000100000001000000000000000100000001000000010000000100000000000000000000000000000000000000000000000100000000000000

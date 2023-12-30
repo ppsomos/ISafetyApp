@@ -1,0 +1,327 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI Text_pl
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pl
+  m_SharedData: {fileID: 11400000, guid: dd7d28031bc502847a4ee6199675860c, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 481342349312
+    m_Localized: Zacznij teraz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 874562543616
+    m_Localized: "Poziom trudno\u015Bci"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 494692818944
+    m_Localized: "Oce\u0144 nas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 498052456448
+    m_Localized: "Graj z przyjaci\xF3\u0142mi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 501743443968
+    m_Localized: Ustawienia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 853951733760
+    m_Localized: "J\u0119zyk"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 865418960896
+    m_Localized: "D\u017Awi\u0119k"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 880157745152
+    m_Localized: "Wybierz j\u0119zyk"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 884507238400
+    m_Localized: OK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 885270601728
+    m_Localized: "Czy na pewno chcesz wyj\u015B\u0107?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 886147211264
+    m_Localized: "\u0141adowanie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 887011237888
+    m_Localized: "Fa\u0142szywe informacje"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 888084979712
+    m_Localized: "Uzale\u017Cnienie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1230285660160
+    m_Localized: Uwodzenie w sieci
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1232118571008
+    m_Localized: Matematyka
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1233288781824
+    m_Localized: "Prze\u015Bladowanie w sieci"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1234232500224
+    m_Localized: "Wy\u0142udzanie danych"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1235033612288
+    m_Localized: Gracz 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1423978618880
+    m_Localized: Gracz 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1426251931648
+    m_Localized: "Wprowad\u017A swoje imi\u0119"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1427564748800
+    m_Localized: "Wprowad\u017A imi\u0119"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1429435408384
+    m_Localized: Gra wstrzymana
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1430924386304
+    m_Localized: Podsumowanie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1431670972416
+    m_Localized: "Poziom uko\u0144czony"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1432325283840
+    m_Localized: Wynik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1433105424384
+    m_Localized: "Nast\u0119pne"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1433759735808
+    m_Localized: "Poziom nieuko\u0144czony"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1434565042176
+    m_Localized: "Gratulacje. Odblokowa\u0142e\u015B nast\u0119pny pok\xF3j."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1691667488768
+    m_Localized: "Rozgrywka zako\u0144czona."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1692573458432
+    m_Localized: "Poprawna odpowied\u017A"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1693374570496
+    m_Localized: "B\u0142\u0119dna odpowied\u017A"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1867203305472
+    m_Localized: Czas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1869212377088
+    m_Localized: "Strona g\u0142\xF3wna"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2531715276800
+    m_Localized: Muzyka
+    m_Metadata:
+      m_Items: []
+  - m_Id: 119579925635072
+    m_Localized: Czytaj pytanie.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 278588292251648
+    m_Localized: "Aby uzyska\u0107 dost\u0119p do ustawie\u0144 gry, naci\u015Bnij
+      przycisk \u201EUstawienia\u201D."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280656369336320
+    m_Localized: "Naci\u015Bnij przycisk, \u017Ceby wybra\u0107 j\u0119zyk."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280658516819968
+    m_Localized: "Aby dostosowa\u0107 poziom trudno\u015Bci gry, naci\u015Bnij odpowiedni
+      przycisk. Pami\u0119taj, \u017Ce ustawienie trudno\u015Bci b\u0119dzie mia\u0142o
+      wp\u0142yw na ilo\u015B\u0107 czasu potrzebnego na wykonanie zada\u0144 w ka\u017Cdym
+      pokoju."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280660328759296
+    m_Localized: "Aby uruchomi\u0107 d\u017Awi\u0119ki gry i d\u017Awi\u0119ki przycisk\xF3w,
+      wci\u015Bnij przycisk d\u017Awi\u0119ku."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280661066956800
+    m_Localized: "Aby w\u0142\u0105czy\u0107 lub wy\u0142\u0105czy\u0107 muzyk\u0119
+      w tle gry, naci\u015Bnij przycisk muzyki"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280661670936576
+    m_Localized: "Aby powr\xF3ci\u0107 do g\u0142\xF3wnego menu, naci\u015Bnij przycisk
+      powr\xF3t."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280662409134080
+    m_Localized: "Aby rozpocz\u0105\u0107 gr\u0119, naci\u015Bnij przycisk start."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280663247994880
+    m_Localized: "Aby wybra\u0107 pok\xF3j, kliknij odpowiedni przycisk pokoju."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280663919083520
+    m_Localized: "Aby obr\xF3ci\u0107 gracza, przesu\u0144 palcem po ekranie w lewo
+      lub w prawo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280664661475328
+    m_Localized: "Aby poruszy\u0107 graczem, u\u017Cyj joysticka."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280665395478528
+    m_Localized: "Aby rozpocz\u0105\u0107 quiz, kliknij przycisk \u201EPrzeczytaj
+      pytanie\u201D."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280666100121600
+    m_Localized: "Aby gra\u0107 w trybie wieloosobowym, wybierz opcj\u0119 \u201EGraj
+      ze znajomymi\u201D."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280666804764672
+    m_Localized: "Mo\u017Cesz wybra\u0107 sw\xF3j awatar, klikaj\u0105c tutaj."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280667408744448
+    m_Localized: "Mo\u017Cesz woisa\u0107 tutaj swoje imi\u0119."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280668075638784
+    m_Localized: "Aby rozpocz\u0105\u0107 poziom, po prostu wybierz pok\xF3j, naciskaj\u0105c
+      odpowiedni przycisk."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 281238903635968
+    m_Localized: "Aby zmieni\u0107 j\u0119zyk, kliknij menu rozwijane j\u0119zyka.
+      Je\u015Bli chcesz dostosowa\u0107 poziom trudno\u015Bci gry, kliknij menu rozwijane
+      poziomu trudno\u015Bci. Mo\u017Cesz tak\u017Ce prze\u0142\u0105cza\u0107 d\u017Awi\u0119k
+      t\u0142a gry, d\u017Awi\u0119k przycisk\xF3w i d\u017Awi\u0119k efekt\xF3w,
+      klikaj\u0105c odpowiednio przyciski muzyki i d\u017Awi\u0119ku."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 281243165048832
+    m_Localized: "Przeczytaj wi\u0119cej."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 281243819360256
+    m_Localized: "Ka\u017Cdy pok\xF3j zawiera wiele obiekt\xF3w. Kiedy zbli\u017Cysz
+      si\u0119 do tych obiekt\xF3w, mo\u017Cesz znale\u017A\u0107 ukryte quizy. Znajd\u017A
+      te obiekty, wykonaj quizy, aby zdoby\u0107 punkty. Po uko\u0144czeniu wszystkich
+      quiz\xF3w mo\u017Cesz wyj\u015B\u0107 z tego pokoju i odblokowa\u0107 nast\u0119pny!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 281244440117248
+    m_Localized: "Tw\xF3j wynik b\u0119dzie decyduj\u0105cym czynnikiem w trybie
+      wieloosobowym"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 281245111205888
+    m_Localized: "IsafetyApp posiada inteligentn\u0105 funkcj\u0119 AI, kt\xF3ra
+      pomo\u017Ce Ci wybra\u0107 poziom trudno\u015Bci gry."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 281245782294528
+    m_Localized: "Tw\xF3j wynik b\u0119dzie decyduj\u0105cym czynnikiem w trybie
+      wieloosobowym"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 281246419828736
+    m_Localized: "IsafetyApp posiada inteligentn\u0105 funkcj\u0119 AI, kt\xF3ra
+      pomo\u017Ce Ci wybra\u0107 poziom trudno\u015Bci gry."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 281247694897152
+    m_Localized: "Pytania te stanowi\u0105 cz\u0119\u015B\u0107 wst\u0119pnej oceny,
+      kt\xF3ra wska\u017Ce Ci poziom trudno\u015Bci najlepiej odpowiadaj\u0105cy
+      Twojemu stylowi gry."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 281251687874560
+    m_Localized: "Naci\u015Bnij ten przycisk, aby zresetowa\u0107 swoje post\u0119py.
+      Pami\u0119taj, \u017Ce spowoduje to usuni\u0119cie wszystkich danych gry."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 281250983231488
+    m_Localized: "To jest zalecany poziom trudno\u015Bci. Zawsze mo\u017Cesz to zmieni\u0107
+      w menu ustawie\u0144."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 281249003520000
+    m_Localized: "Pami\u0119taj, \u017Ce wy\u017Cszy poziom trudno\u015Bci skraca
+      czas rozwi\u0105zywania zada\u0144 w ka\u017Cdym pokoju, co utrudnia post\u0119p
+      w grze."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 466559259820032
+    m_Localized: "\r\nPytanie zako\u0144czone!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 468480792117248
+    m_Localized: Ocena sztucznej inteligencji
+    m_Metadata:
+      m_Items: []
+  - m_Id: 500172727345152
+    m_Localized: "Naci\u015Bnij przycisk OK, aby wprowadzi\u0107 dane drugiego gracza"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 509968822132736
+    m_Localized: "Aby wstrzyma\u0107 gr\u0119, naci\u015Bnij przycisk pauzy."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 510140671156224
+    m_Localized: "Aby wznowi\u0107 gr\u0119, po prostu naci\u015Bnij przycisk \u201EWzn\xF3w\u201D."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 520917956255744
+    m_Localized: "Rewan\u017C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1453763801038848
+    m_Localized: "Gracz 1. Termin uko\u0144czony"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1460327605780480
+    m_Localized: "\rPomin\u0105\u0107"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38fa2ca5f64c5154f959abf368727ae3, type: 3}
+  m_Name: CyberTFData(Polish)
+  m_EditorClassIdentifier: 
+  quizType: 1
+  roomIndex: 3
+  questions:
+  - "Cybern\u0119kanie odbywa si\u0119 wy\u0142\u0105cznie za pomoc\u0105 wiadomo\u015Bci
+    tekstowych"
+  - "Cyberprzemoc r\xF3\u017Cni si\u0119 od n\u0119kania twarz\u0105 w twarz "
+  - "Rodzicowi lub nauczycielowi trudno jest zrozumie\u0107, \u017Ce dziecko jest
+    prze\u015Bladowane"
+  - "Cyberprzemoc to zjawisko wsp\xF3\u0142czesne"
+  - "Dzieci ze szk\xF3\u0142 podstawowych maj\u0105 wi\u0119cej negatywnych uczu\u0107
+    w konsekwencji cyberprzemocy ni\u017C starsze dzieci."
+  - "Cybern\u0119kanie to zjawisko, kt\xF3re zwykle ma miejsce w szkole"
+  - "Rodzice mog\u0105 chroni\u0107 swoje dzieci przed cybern\u0119kaniem"
+  - " Nauczyciele mog\u0105 chroni\u0107 uczni\xF3w przed cybern\u0119kaniem, gdy
+    s\u0105 w szkole "
+  - "Dzieci powinny przesta\u0107 korzysta\u0107 z internetu"
+  - " Cyberprzemoc nie ma ogranicze\u0144 geograficznych ani czasowych. Mo\u017Ce
+    si\u0119 to zdarzy\u0107 w dowolnym momencie z dowolnego miejsca, o ile jest
+    dost\u0119p do Internetu "
+  - "W Internecie nastolatki nie powinny umieszcza\u0107 danych osobowych, takich
+    jak numer telefonu numery, adresy itp."
+  - "Osoba doros\u0142a mo\u017Ce zablokowa\u0107 niebezpieczne strony internetowe
+    na komputerze swojego dziecka? "
+  - "Oosoba pe\u0142noletnia mo\u017Ce blokowa\u0107 niebezpieczne strony w Internecie
+    tylko za op\u0142at\u0105"
+  - "Dziecko odpowiednio wychowane przez rodzin\u0119 i szko\u0142\u0119 ma mniejsze
+    szanse by\u0107 ofiar\u0105 cyberprzemocy "
+  - "Kiedy nauczyciel lub rodzic zdaje sobie spraw\u0119, \u017Ce dziecko pad\u0142o
+    ofiar\u0105 cyberprzemocy, dobrze jest to znale\u017A\u0107 rozwi\u0105zania
+    z pomoc\u0105 psychologa "
+  - "Cyberprzemoc ma powa\u017Cny emocjonalny i psychologiczny wp\u0142yw na dziecko "
+  - "ybern\u0119kanie nie dyskryminuje ze wzgl\u0119du na p\u0142e\u0107"
+  - "Kiedy ma\u0142oletnie dziecko jest ofiar\u0105 cyberprzemocy, rodzice musz\u0105
+    sami zaj\u0105\u0107 si\u0119 t\u0105 spraw\u0105"
+  Op1:
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  Op2:
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  answersIndex: 010000000000000001000000000000000000000001000000000000000000000001000000000000000000000000000000010000000000000000000000000000000000000001000000

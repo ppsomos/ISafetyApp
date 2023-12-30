@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d1b1f8d4a0d9534b852669dce885af9, type: 3}
+  m_Name: MathMCQData(Polish)
+  m_EditorClassIdentifier: 
+  quizType: 0
+  questionIndex: 5
+  questions:
+  - "Kt\xF3ra z poni\u017Cszych liczb spe\u0142nia r\xF3wnanie x\xB2+x\u22126=0?"
+  - "Liczba 8 mniejsza ni\u017C 120% x r\xF3wna si\u0119 16. Oznacza to, \u017Ce:"
+  - "Liczba jest o 20% mniejsza ni\u017C liczba a:"
+  - "Aby x i y by\u0142y do siebie proporcjonalne, znak zapytania nale\u017Cy zast\u0105pi\u0107
+    liczb\u0105:"
+  - "Pies Jana zjada 4 puszki karmy w ci\u0105gu 3 dni. Ile puszek zje pies w kwietniu?"
+  - "Kt\xF3re ze zda\u0144 jest fa\u0142szywe?"
+  - "Jeden z k\u0105t\xF3w ma miar\u0119 20\xB0. Drugi jest o 50\xB0 wi\u0119kszy
+    od pierwszego. To znaczy, \u017Ce jest to tr\xF3jk\u0105t:"
+  - " Kt\xF3ra z tych figur ma dok\u0142adnie jedn\u0105 o\u015B symetrii?"
+  - "Dany jest punkt P=(\u22123;2). Jakie s\u0105 wsp\xF3\u0142rz\u0119dne punktu
+    R, kt\xF3ry jest symetryczny do punktu P wzgl\u0119dem osi x?"
+  Op1:
+  - x= 4
+  - x= 2
+  - 0,8 a
+  - 18
+  - ' 30'
+  - " Przek\u0105tne rombu przecinaj\u0105 si\u0119 w \u015Brodku"
+  - "ostrok\u0105tny"
+  - kwadrat
+  - ' R=(3;2)'
+  Op2:
+  - x= -2
+  - x= 20
+  - 0,2 a
+  - 24
+  - 36
+  - "Przek\u0105tne rombu s\u0105 tej samej d\u0142ugo\u015Bci"
+  - "prostok\u0105tny"
+  - "ko\u0142o"
+  - "R=(3;\u22122)"
+  Op3:
+  - x= -3
+  - x= 6
+  - 1,2 a
+  - 27
+  - ponad 40
+  - "Przek\u0105tne kwadratu przecinaj\u0105 si\u0119 pod k\u0105tem prostym"
+  - "rozwartok\u0105tny"
+  - "pi\u0119ciok\u0105t foremny"
+  - "R=(\u22123;2)"
+  answersIndex:
+  - 2
+  - 1
+  - 0
+  - 2
+  - 1
+  - 1
+  - 1
+  - 2
+  - 2

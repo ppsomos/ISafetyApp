@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38fa2ca5f64c5154f959abf368727ae3, type: 3}
+  m_Name: MathTFData(Polish)
+  m_EditorClassIdentifier: 
+  quizType: 1
+  roomIndex: 5
+  questions:
+  - "R\xF3wnanie sprzeczne ma rozwi\u0105zania zerowe."
+  - Iloczyn liczby a i sumy liczb a i b wynosi po uproszczeniu a2+b
+  - "Odcinek o d\u0142ugo\u015Bci 6 decymetr\xF3w i x centymetr\xF3w to 60+x centymetr\xF3w"
+  - "Je\u015Bli 30 gram\xF3w sera kosztuje 6 z\u0142, to 70 gram\xF3w tego sera kosztuje
+    14 z\u0142."
+  - "W tr\xF3jk\u0105cie prostok\u0105tnym najd\u0142u\u017Cszy bok jest zawsze przeciwprostok\u0105tn\u0105."
+  - "Dwusieczna k\u0105ta 60\xB0 zawsze dzieli ten k\u0105t na dwa k\u0105ty o mierze
+    30\xB0, a nie np. na k\u0105ty 40\xB0 i 20\xB0."
+  Op1:
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  Op2:
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  answersIndex: 000000000100000000000000000000000000000000000000

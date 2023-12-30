@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d1b1f8d4a0d9534b852669dce885af9, type: 3}
+  m_Name: New MCQ Data(Polish)
+  m_EditorClassIdentifier: 
+  quizType: 0
+  questionIndex: 2
+  questions:
+  - "Jak nazywa si\u0119 osoba, kt\xF3ra jest uzale\u017Cniona od fa\u0142szywej
+    to\u017Csamo\u015Bci w sieci, podszywa si\u0119 w internecie, w rzeczywisto\u015Bci
+    wygl\u0105da inaczej ni\u017C na zdj\u0119ciach itp.?"
+  - " Zaznacz objaw, kt\xF3ry mo\u017Ce wi\u0105za\u0107 si\u0119 z uzale\u017Cnieniem
+    od Internetu."
+  - "Jakie mog\u0105 by\u0107 emocjonalne skutki uzale\u017Cnienia od Internetu?"
+  - "Zaznacz 1 powody, dla kt\xF3rych ludzie uzale\u017Cniaj\u0105 si\u0119 od Internetu"
+  - "O ile wzros\u0142a liczba u\u017Cytkownik\xF3w Internetu od 2001 roku? Wybierz
+    poprawn\u0105 odpowied\u017A:"
+  - "Kto jest najbardziej dotkni\u0119ty uzale\u017Cnieniem od Internetu? Wybierz
+    poprawn\u0105 odpowied\u017A:"
+  - Czym jest nomofobia?
+  - "Jak gry wideo wp\u0142ywaj\u0105 na m\xF3zg? Wybierz poprawne odpowiedzi:"
+  Op1:
+  - pretendent
+  - "bezsenno\u015B\u0107"
+  - poczucie winy
+  - "dost\u0119pno\u015B\u0107"
+  - 10%
+  - 11-12 lat
+  - "Strach przed porzuceniem przez przyjaci\xF3\u0142."
+  - "Mog\u0105 negatywnie wp\u0142ywa\u0107 na m\xF3zg (np. zabijaj\u0105 kom\xF3rki
+    m\xF3zgowe), pami\u0119\u0107 i wzrok. "
+  Op2:
+  - ' sum'
+  - problemy ze wzrokiem
+  - "nieko\u0144cz\u0105ca si\u0119 satysfakcja"
+  - profesjonalizm
+  - 20%
+  - 15-16 lat
+  - ' Strach przed byciem offline.'
+  - "Nie ma dowod\xF3w na to, \u017Ce gry wideo maj\u0105 jakikolwiek wp\u0142yw
+    na m\xF3zg."
+  Op3:
+  - " jask\xF3\u0142ka"
+  - "zwi\u0119kszona koncentracja"
+  - "wzrost samooceny niepok\xF3j"
+  - kontrola
+  - 45%
+  - 19-21 lat
+  - Strach przed byciem bez smartfona.
+  - "Mog\u0105 powodowa\u0107 stres, niepok\xF3j, a nawet izolacj\u0119."
+  answersIndex:
+  - 1
+  - 1,2
+  - 0,2
+  - 0
+  - 2
+  - 1
+  - 2
+  - 0,2

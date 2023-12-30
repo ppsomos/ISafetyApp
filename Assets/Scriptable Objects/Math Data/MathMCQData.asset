@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d1b1f8d4a0d9534b852669dce885af9, type: 3}
+  m_Name: MathMCQData
+  m_EditorClassIdentifier: 
+  quizType: 0
+  questionIndex: 5
+  questions:
+  - "Which of the following numbers satisfy the equation x\xB2+x\u22126=0 ?"
+  - 'The number 8 less than 120% of x is equal to 16. This means:'
+  - 'The number is 20% less than the number a is:'
+  - 'For x and y to be proportional to each other, the question mark must be replaced
+    by a number:'
+  - John's dog eats 4 cans of food in 3 days. How many cans will a dog eat in April?
+  - Which of the sentences is false?
+  - "One of the angles measures 20\xB0. The second is 50\xB0 larger than the first.
+    That means it's a triangle:"
+  - Which of these figures has exactly one line of symmetry?
+  - "The point P=(\u22123;2) is given. What are the coordinates of a point R that
+    is symmetric to point P about the x axis?"
+  Op1:
+  - x= 4
+  - x= 2
+  - 0.8 a
+  - 18
+  - 30
+  - The diagonals of a rhombus intersect in the middle.
+  - Acute triangle.
+  - Square.
+  - R=(3;2)
+  Op2:
+  - x= -2
+  - x= 20
+  - 0,2 a
+  - 24
+  - 'ponad 40 '
+  - The diagonals of a rhombus are the same length.
+  - Rectangular triangle.
+  - A regular pentagon.
+  - "R=(\u22123;2)"
+  Op3:
+  - x= -3
+  - x= 6
+  - '1,2 a '
+  - 27
+  - 40
+  - The diagonals of a square intersect at right angles.
+  - Obtuse triangle.
+  - Isosceles right triangle.
+  - "R=(\u22123;\u22122)"
+  answersIndex:
+  - 2
+  - 1
+  - 0
+  - 2
+  - 1
+  - 1
+  - 1
+  - 2
+  - 2

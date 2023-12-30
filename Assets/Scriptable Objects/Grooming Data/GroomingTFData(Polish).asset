@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38fa2ca5f64c5154f959abf368727ae3, type: 3}
+  m_Name: GroomingTFData(Polish)
+  m_EditorClassIdentifier: 
+  quizType: 1
+  roomIndex: 0
+  questions:
+  - "Podczas uwodzenia online korzystanie z medi\xF3w spo\u0142eczno\u015Bciowych
+    u\u0142atwia sprawcy wyb\xF3r podatnej ofiary."
+  - "W uwodzeniu i uwodzeniu online sprawc\u0105 przemocy mo\u017Ce by\u0107 tylko
+    kto\u015B nieznany. "
+  - "W internetowym uwodzeniu sprawc\u0105 jest zazwyczaj m\u0142oda osoba."
+  - "Podczas uwodzenia online sprawca zawsze ukrywa swoje prawdziwe dane osobowe,
+    podaj\u0105c si\u0119 za kogo\u015B innego. "
+  - "Podczas uwodzenia online sprawca nie mo\u017Ce ukrywa\u0107 swojego wieku i
+    p\u0142ci."
+  - "W przypadku uwodzenia online groomer mo\u017Ce udawa\u0107 posta\u0107, tak\u0105
+    jak trener, agent modelek, \u0142owca talent\xF3w, influencer, celebryta i inne
+    osoby. "
+  - "Podczas uwodzenia online jednym z cel\xF3w sprawcy jest ostateczne spotkanie
+    potencjalnej ofiary w prawdziwym \u017Cyciu."
+  - "Podczas uwodzenia ofiary mog\u0105 r\xF3wnie\u017C zosta\u0107 uwiedzione przez
+    cz\u0142onk\xF3w rodziny. "
+  - 'W internetowym uwodzeniu celem sprawcy jest seksualne uwiedzenie potencjalnej
+    ofiary. '
+  - "Podczas uwodzenia online groomer zbli\u017Ca si\u0119 do swoich potencjalnych
+    ofiar za po\u015Brednictwem sieci spo\u0142eczno\u015Bciowych"
+  - "Podczas uwodzenia online sprawca powie swojej potencjalnej ofierze, \u017Ce
+    nie maj\u0105 wsp\xF3lnych zainteresowa\u0144."
+  - "Podczas uwodzenia online dyskusje o tre\u015Bciach seksualnych nie s\u0105 przedmiotem
+    zainteresowania sprawcy."
+  - "Jedn\u0105 z oznak uwodzenia online jest to, \u017Ce sprawca prosi potencjaln\u0105
+    ofiar\u0119 o zachowanie prywatno\u015Bci rozmowy. "
+  - "Sposobem ochrony przed uwodzeniem w sieci jest ca\u0142kowite trzymanie si\u0119
+    z dala od internetu "
+  - "Nie ma nic z\u0142ego w spotykaniu si\u0119 z nieznajomym, kt\xF3rego w\u0142a\u015Bnie
+    pozna\u0142e\u015B online"
+  - "W internecie nie powiniene\u015B uwa\u017Ca\u0107, gdzie wykorzystujesz swoje
+    dane osobowe"
+  - "Cokolwiek stanie si\u0119 z Tob\u0105 w Internecie, pod \u017Cadnym pozorem
+    nie wolno informowa\u0107 osoby doros\u0142ej."
+  - "Uwodzenie online ma miejsce w okre\u015Blonym czasie"
+  - "Podczas uwodzenia online groomer mo\u017Ce manipulowa\u0107 dzie\u0107mi, aby
+    wysy\u0142a\u0142y zdj\u0119cia lub szanta\u017Cowa\u0107 je zdj\u0119ciami,
+    kt\xF3re dziecko mog\u0142o ju\u017C wys\u0142a\u0107."
+  - "Podczas uwodzenia online sprawca wysy\u0142a wiadomo\u015Bci o charakterze seksualnym,
+    kt\xF3re mog\u0105 wygl\u0105da\u0107 jak komplementy lub pytania dotycz\u0105ce
+    wcze\u015Bniejszych do\u015Bwiadcze\u0144 seksualnych"
+  Op1:
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  Op2:
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  answersIndex: 0000000001000000010000000100000000000000000000000000000000000000000000000000000001000000010000000000000001000000010000000100000001000000010000000000000000000000

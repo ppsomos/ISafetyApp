@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38fa2ca5f64c5154f959abf368727ae3, type: 3}
+  m_Name: CyberTFData
+  m_EditorClassIdentifier: 
+  quizType: 1
+  roomIndex: 3
+  questions:
+  - Cyberbullying is only done by text messages.
+  - Cyberbullying is different from face to face bullying.
+  - It is difficult for a parent or teacher to realize that a child has been bullying.
+  - Cyberbullying is a modern-day phenomenon.
+  - Primary school children have more negative feelings as a consequence of cyberbullying
+    than older children.
+  - Cyberbullying is a phenomenon that usually happens in school.
+  - Parents can protect their children from cyberbullying,
+  - Teachers can protect students from cyberbullying when they are at school.
+  - Children should stop using the internet.
+  - Cyberbullying has no geographical and temporal limitations. It can happen at
+    any time from any place as long as there is internet access.
+  - 'On the internet, teenagers should not post personal information such as phone
+    numbers, addresses, etc. '
+  - An adult can lock dangerous internet pages on their child's computer?
+  - An adult can only lock dangerous pages on the internet for a fee.
+  - A child who has been properly educated by his/her family and school is less likely
+    to be a victim of cyberbullying.
+  - When a teacher or parent realises that a child has been cyberbullied, it is good
+    to find solutions with the help of a psychologist.
+  - Cyberbullying has a serious emotional and psychological impact on a child.
+  - Cyberbullying does not discriminate on gender.
+  - When a minor child is a victim of cyberbullying it is the sole responsibility
+    of the parents to deal with it.
+  Op1:
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  Op2:
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  answersIndex: 010000000000000001000000000000000000000001000000000000000000000001000000000000000000000000000000010000000000000000000000000000000000000001000000

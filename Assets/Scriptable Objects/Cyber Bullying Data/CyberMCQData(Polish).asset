@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d1b1f8d4a0d9534b852669dce885af9, type: 3}
+  m_Name: CyberMCQData(Polish)
+  m_EditorClassIdentifier: 
+  quizType: 0
+  questionIndex: 3
+  questions:
+  - "Rozpocz\u0105\u0142em rozmow\u0119 z w Internecie z nieznajomym, kt\xF3ry prosi
+    mnie o wys\u0142anie mojego zdj\u0119cia i adresu. Jak powinienem zareagowa\u0107?"
+  - "Kiedy dziecko, kt\xF3re jest ofiar\u0105 cyberprzemocy, m\xF3wi o tym tylko
+    przyjacielowi, a nie doros\u0142emu, przyjaciel powinien zareagowa\u0107 w nast\u0119puj\u0105cy
+    spos\xF3b:"
+  - "Zaznacz objaw, kt\xF3ry mo\u017Ce mie\u0107 zwi\u0105zek z uzale\u017Cnieniem
+    od Internetu."
+  Op1:
+  - "Wysy\u0142am mu moje zdj\u0119cia i adres"
+  - "zachowa\u0107 to w ukryciu"
+  - "Wysy\u0142am mu moje zdj\u0119cia i adres"
+  Op2:
+  - "Omawiam to z kim\u015B, komu ufam"
+  - "porozmawia\u0107 z nauczycielem"
+  - "Omawiam to z kim\u015B, komu ufam"
+  Op3:
+  - "Przerywam rozmow\u0119 i blokuj\u0119 go"
+  - "porozmawia\u0107 z rodzicami swojego przyjaciela, kt\xF3ry jest ofiar\u0105"
+  - "Przerywam rozmow\u0119 i blokuj\u0119 go"
+  answersIndex:
+  - 1,2
+  - 1,2
+  - 0,2

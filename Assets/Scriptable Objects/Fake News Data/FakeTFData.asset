@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38fa2ca5f64c5154f959abf368727ae3, type: 3}
+  m_Name: FakeTFData
+  m_EditorClassIdentifier: 
+  quizType: 1
+  roomIndex: 1
+  questions:
+  - Misinformation is false or inaccurate information that is mistakenly or inadvertently
+    created or spread.
+  - The intent of misinformation is to deceive.
+  - Disinformation is false information that is not deliberately created and spread.
+  - The intent of disinformation is to influence public opinion or obscure the truth.
+  - "\u2018Fake news\u2019 is closely associated with politics and is more narrowly
+    understood as political news stories. "
+  - False information refers to a range of information covering only politics.
+  - False information is news, stories or hoaxes created to deliberately misinform
+    or deceive readers.
+  - Clickbait are true stories to inform as many people as possible.
+  - Propaganda is the communication of stories to inform audiences about honest,
+    collaborative, problem solving political causes and agendas.
+  - Lots of websites and social media accounts publish fake news stories for entertainment
+    and parody.
+  - Social media are a reliable source to get informed about medical issues.
+  - Sometimes our own views or beliefs are affecting our judgement of a news feature
+    or report.
+  - Often the headlines of fake news stories are in all lowercase letters.
+  - Social media news feeds tend to display news and articles that they think we
+    will like based on our personalised searches.
+  - 'Manipulated  Content  is  when  real  information  or  imagery  is  shared 
+    to  the  public  without crosschecking. '
+  - Misleading headings are false stories whose headlines are in all capitals.
+  - 'You can help stop the spread of fake news on social media by thinking critically. '
+  - Age doesn't play a role in who is more likely to spread fake news.
+  - Specific demographic groups are targeted by the originators of disinformation.
+  - Misinformation thrives in areas where people have little control over threats
+    like environmental disasters or diseases.
+  Op1:
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  Op2:
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  answersIndex: 0000000001000000010000000000000000000000010000000000000001000000010000000000000001000000000000000100000000000000010000000100000000000000010000000000000000000000

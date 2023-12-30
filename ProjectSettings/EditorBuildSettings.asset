@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Final Scenes/SplashScreen.unity
+    guid: 291527bbb4ed270428de2b00d0e8a6a6
+  - enabled: 1
+    path: Assets/Scenes/Final Scenes/Mainscene.unity
+    guid: 9c00e46379a5eee4f92d0ca1ae97fa4e
+  - enabled: 1
+    path: Assets/Scenes/Final Scenes/Musem scene.unity
+    guid: e4cb8d714e8c3034d9d75c631454be2f
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: e7828c5931250eb4f969f0336641c080,
+      type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7,
+      type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: 2a19a66c91bdf0243a8d404a33dc4c91,
+      type: 2}

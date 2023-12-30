@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38fa2ca5f64c5154f959abf368727ae3, type: 3}
+  m_Name: AddictionTFData(Polish)
+  m_EditorClassIdentifier: 
+  quizType: 1
+  roomIndex: 2
+  questions:
+  - "Korzystanie z technologii uwalnia wi\u0119cej dopaminy ni\u017C jedzenie ulubionego
+    jedzenia."
+  - "Problemy z uzale\u017Cnieniem od Internetu s\u0105 bardziej prawdopodobne w\u015Br\xF3d
+    nastolatk\xF3w ni\u017C doros\u0142ych."
+  - "Osoba uzale\u017Cniona mo\u017Ce natychmiast przesta\u0107 si\u0119 uzale\u017Cnia\u0107,
+    je\u015Bli tego chce."
+  - "Uzale\u017Cnienie od Internetu powoduje zmiany tylko w Twoim zdrowiu psychicznym."
+  - Nadmierne korzystanie z Internetu jest zaburzeniem.
+  - "Uzale\u017Cnienie od Internetu wi\u0105\u017Ce si\u0119 tylko z nadmiernym korzystaniem
+    z Internetu."
+  - "Czy uzale\u017Cnienie od Internetu jest wymienione w najnowszym wydaniu Diagnostic
+    and Statistical Manual of Mental Disorders (powszechnie okre\u015Blanego jako
+    DSM-5)?"
+  - "Czy uzale\u017Cnienie od Internetu mo\u017Ce by\u0107 zwi\u0105zane z chorob\u0105
+    psychiczn\u0105?"
+  - "Czy leki s\u0105 czasami stosowane w leczeniu uzale\u017Cnienia od Internetu?"
+  - "O ile wzros\u0142a liczba u\u017Cytkownik\xF3w Internetu od 2001 roku? Wybierz
+    poprawn\u0105 odpowied\u017A:"
+  - "Prawda czy fa\u0142sz? Czynnikami zwi\u0105zanymi z uzale\u017Cnieniem od Internetu
+    s\u0105: depresja, l\u0119ki, agresja, impulsywno\u015B\u0107 i niska samoocena."
+  - "Czy gry wideo wp\u0142ywaj\u0105 na m\xF3zg w taki sam spos\xF3b jak uzale\u017Cniaj\u0105ce
+    narkotyki? Wybierz poprawn\u0105 odpowied\u017A:"
+  Op1:
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  - prawda
+  Op2:
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  - "fa\u0142sz"
+  answersIndex: 000000000000000001000000010000000100000001000000010000000000000000000000000000000000000000000000

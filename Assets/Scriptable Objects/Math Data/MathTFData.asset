@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38fa2ca5f64c5154f959abf368727ae3, type: 3}
+  m_Name: MathTFData
+  m_EditorClassIdentifier: 
+  quizType: 1
+  roomIndex: 5
+  questions:
+  - A contradictory equation has zero solutions.
+  - The product of the number a and the sum of the numbers a and b is, after simplification,
+    a2+b.
+  - 'A segment that is 6 decimeters and x centimeters is 60+x centimeters. '
+  - If 30 grams of cheese costs PLN 6, then 70 grams of this cheese costs PLN 14.
+  - In a right triangle, the longest side is always the hypotenuse.
+  - "The bisector of a 60\xB0 angle always divides the angle into two 30\xB0 angles,
+    not, for example, into 40\xB0 and 20\xB0 angles."
+  Op1:
+  - True
+  - True
+  - True
+  - True
+  - True
+  - True
+  Op2:
+  - False
+  - False
+  - False
+  - False
+  - False
+  - False
+  answersIndex: 000000000100000000000000000000000000000000000000

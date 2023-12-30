@@ -1,0 +1,20 @@
+{
+  "GlobalObjectId_V1-2-291527bbb4ed270428de2b00d0e8a6a6-666076990-0": {
+    "GameObjectId": "GlobalObjectId_V1-2-291527bbb4ed270428de2b00d0e8a6a6-666076990-0",
+    "CommentText": "Main Camera etc",
+    "AssetGUID": "291527bbb4ed270428de2b00d0e8a6a6",
+    "UniqueItemID": "GlobalObjectId_V1-2-291527bbb4ed270428de2b00d0e8a6a6-666076990-0"
+  },
+  "GlobalObjectId_V1-2-291527bbb4ed270428de2b00d0e8a6a6-591552756-0": {
+    "GameObjectId": "GlobalObjectId_V1-2-291527bbb4ed270428de2b00d0e8a6a6-591552756-0",
+    "CommentText": "Singleton Manager\n",
+    "AssetGUID": "291527bbb4ed270428de2b00d0e8a6a6",
+    "UniqueItemID": "GlobalObjectId_V1-2-291527bbb4ed270428de2b00d0e8a6a6-591552756-0"
+  },
+  "GlobalObjectId_V1-2-291527bbb4ed270428de2b00d0e8a6a6-1706658669-0": {
+    "GameObjectId": "GlobalObjectId_V1-2-291527bbb4ed270428de2b00d0e8a6a6-1706658669-0",
+    "CommentText": "Game UI",
+    "AssetGUID": "291527bbb4ed270428de2b00d0e8a6a6",
+    "UniqueItemID": "GlobalObjectId_V1-2-291527bbb4ed270428de2b00d0e8a6a6-1706658669-0"
+  }
+}

@@ -1,20 +1,11 @@
 # ISafetyApp
 
-The player is provided with a series of levels in escape room fashion where he/she needs to solve puzzles and quizzes about Online safety. This is a unique 3D environment-based escape room game designed for online learning.
+Δημιουργήθηκε στο πλαίσιο του ερευνητικού προγράμματος Erasmus+ KA201 με τίτλο «ISafetyApp:Teaching Students Internet Safety Through an Artificial Intelligence Mobile Application»  (2020-1-PL01-KA226-SCH-096462)  όπου δημιούργησα το ψηφιακό παιχνίδι σοβαρού σκοπού (mobile serious game) ISafetyApp για την εξ αποστάσεως διδασκαλία των μαθητών ως προς την προστασία τους από τους κινδύνους τους διαδικτύου.
+https://play.google.com/store/apps/details?id=com.bgs.safetyescapegame
+Σχετική Δημοσιεύση:
+Psomos, P. (2023) Design, Development & Evaluation of a Serious Game on Inter-net Safety, In Proceedings of 6th annual International Conference of Education, Research and Innovation (ICERI2013).
+https://library.iated.org/view/PSOMOS2023DES2
 
-Main features in the game.
-
-    1. Language Selection: Players can play the game in English, Greek, or Polish. 
-
-    2. 10 Question Onboarding: Before starting the game for the first time, players answer 10 questions to set their difficulty level and personalize their experience. 
-
-    3. Game Tutorial: A built-in tutorial guides players through the basic game mechanics and controls. 
-
-    4. Difficulty Level: Players can choose the game's difficulty level based on their skill and preference. 
-
-    5. Local Multiplayer: Players can play the game solo or cooperatively with friends. 
-
-Unity Version: Developed using Unity version 2022.1.1f1. 
 
 
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
